@@ -39,6 +39,30 @@ footer{
     width: 100%;
 }
 
+/* Menu panel */
+#menu {
+  background-color: var(--block);
+  list-style-type: none;
+  text-wrap: nowrap;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#menu li {
+  padding-inline: 20px;
+}
+#menu a {
+  font-weight: 400;
+  font-size: 21px;
+  color: #3B3B1A;
+  text-decoration-line: none;
+  display: flex;
+}
+#menu a:hover {
+  color: #bdbdbd;
+}
+
 /* Fonts */
 .playwrite-au-qld-font {
   font-family: "Playwrite AU QLD", cursive;
