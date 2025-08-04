@@ -5,3 +5,18 @@ html {
   box-sizing: border-box;
   margin: 0;
 }
+
+
+/* Fonts */
+.playwrite-au-qld-font {
+  font-family: "Playwrite AU QLD", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.castoro-titling-regular {
+  font-family: "Castoro Titling", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
