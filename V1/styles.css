@@ -44,6 +44,23 @@ section{
   padding: 20px;
   width: 100%;
 }
+#contacts{
+  margin: 20px;
+  text-align: center;
+  font-weight: 500;
+  color: #fff;
+}
+#contacts a {
+  color: #fff;
+  text-decoration: none;
+}
+#info_firm{
+  text-align: end;
+  font-weight: 400;
+  font-size: 15px;
+  color: #fff;
+  margin-top: 10px;
+}
 
 /* Menu panel */
 #menu {
