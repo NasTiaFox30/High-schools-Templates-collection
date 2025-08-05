@@ -109,8 +109,12 @@ section{
 #logo-container {
   max-height: 100px;
   margin-right: 20px;
+}
+#logo-container a {
   display: flex;
   align-items: center;
+  text-decoration: none;
+  color: #000;
 }
 #logo{
   max-width: 100px;
