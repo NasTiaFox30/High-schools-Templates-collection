@@ -161,7 +161,8 @@ section{
   border-radius: 10px;
   width: 350px;
   max-height: 350px;
-  clip-path: border-box;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
 }
 .aktualnosc img{
   width: 100%;
