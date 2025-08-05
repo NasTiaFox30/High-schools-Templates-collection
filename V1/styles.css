@@ -83,6 +83,7 @@ section{
   color: #3B3B1A;
   text-decoration-line: none;
   display: flex;
+  transition: all 0.3s ease;
 }
 #menu a:hover {
   color: #bdbdbd;
@@ -165,6 +166,13 @@ section{
   font-weight: 500;
   font-size: 18px;
 }
+.aktualnosc a h3 {
+ transition: all 0.3s ease;
+}
+.aktualnosc a:hover h3 {
+  color: #8f8f8f;
+}
+
 
 #googleMap{
   width: 100%;
