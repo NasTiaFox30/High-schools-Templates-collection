@@ -39,6 +39,11 @@ footer{
     bottom: 0;
     width: 100%;
 }
+section{
+  background-color: var(--section);
+  padding: 20px;
+  width: 100%;
+}
 
 /* Menu panel */
 #menu {
