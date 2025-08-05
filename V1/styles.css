@@ -8,10 +8,11 @@ html {
 
  /* Color palette: */
 :root {
-  --background: #AEC8A4;
-  --block: #E7EFC7;
-  --section: #8A784E;
-  --footer: #3B3B1A;
+  --background: #EBE5C2;
+  --header: #F8F3D9;
+  --block: #706D54;
+  --section: #B9B28A;
+  --footer: #504B38;
 }
 
 body {
