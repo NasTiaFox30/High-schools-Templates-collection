@@ -63,6 +63,11 @@ footer{
   color: #bdbdbd;
 }
 
+#logo{
+  width: 100px;
+  height: 100px;
+}
+
 /* Fonts */
 .playwrite-au-qld-font {
   font-family: "Playwrite AU QLD", cursive;
