@@ -54,16 +54,7 @@ section{
   padding: 20px;
   width: 100%;
 }
-#contacts{
-  margin: 20px;
-  text-align: center;
-  font-weight: 500;
-  color: #fff;
-}
-#contacts a {
-  color: #fff;
-  text-decoration: none;
-}
+
 #info_firm{
   text-align: end;
   font-weight: 400;
@@ -239,4 +230,89 @@ section{
   text-decoration: none; 
   font-weight: 500;
   font-size: 21px;
+}
+
+#contacts-section {
+    background-color: var(--background);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-content {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.contact-form .input-field input,
+.contact-form .input-field textarea {
+    border-bottom: 1px solid #B9B28A;
+    color: #504B38;
+}
+
+.contact-form .input-field input:focus,
+.contact-form .input-field textarea:focus {
+    border-bottom: 2px solid #B9B28A;
+    box-shadow: 0 1px 0 0 #B9B28A;
+}
+
+.contact-form .input-field label {
+    color: #504B38;
+}
+.contact-info h3 {
+    font-size: 24px;
+    margin-bottom: 1rem;
+}
+.contact-info p {
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+
+#contacts{
+  margin: 20px;
+  text-align: center;
+  font-weight: 500;
+  color: #3B3B1A;
+}
+#contacts a {
+  color: #3B3B1A;
+  text-decoration: none;
+}
+.map-placeholder {
+    width: 100%;
+    height: 300px;
+    background-color: #EBE5C2;
+    border: 2px dashed #B9B28A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #504B38;
+    font-style: italic;
+    margin-top: 2rem;
+}
+
+input, textarea {
+     background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #9e9e9e;
+    border-radius: 0;
+    outline: none;
+    height: 3rem;
+    width: 100%;
+    font-size: 16px;
+    margin: 0 0 8px 0;
+    padding: 0;
+}
+input+label:after{
+  display: block;
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  opacity: 0;
+  transition: .2s opacity ease-out, .2s color ease-out;
 }
