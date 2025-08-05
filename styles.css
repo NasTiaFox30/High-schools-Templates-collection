@@ -149,7 +149,7 @@ section{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url('../media/photo1.jpg');
+  background-image: url('./media/photo1.jpg');
 }
 #powitanie_text{
   border-radius: 20px;
