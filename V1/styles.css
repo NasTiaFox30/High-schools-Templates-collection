@@ -33,8 +33,9 @@ header {
   align-items: center;
   position: fixed;
   width: 100%;
-  height: 100px;
+  min-height: 100px;
   z-index: 1;
+  padding-bottom: 5px;
 }
 main {
   margin-top: 100px;
@@ -74,7 +75,6 @@ section{
 /* Menu panel */
 #menu {
   border-radius: 5px;
-  margin-left: 20px;
   background-color: var(--section);
   list-style-type: none;
   text-wrap: nowrap;
@@ -98,9 +98,23 @@ section{
   color: #bdbdbd;
 }
 
+#flex-menu{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#logo-container {
+  max-height: 100px;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+}
 #logo{
-  width: 100px;
-  height: 100px;
+  max-width: 100px;
+  max-height: 100px;
 }
 
 /* Fonts */
@@ -135,7 +149,7 @@ section{
 }
 #powitanie_text{
   border-radius: 20px;
-  width: 60%;
+  width: 80%;
  background-color: #b9b28aa9;
 }
 
