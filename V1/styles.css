@@ -76,3 +76,19 @@ footer{
   font-style: normal;
 }
 
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: var(--block);
+  text-decoration: none;
+}
+#aplikuj_link{
+  color: #3B3B1A;
+  text-decoration: none; 
+  font-weight: 500;
+  font-size: 21px;
+}
