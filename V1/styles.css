@@ -25,10 +25,10 @@ body {
 }
 
 header {
+  background: var(--header);
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 }
 footer{
     background-color: var(--footer);
@@ -42,7 +42,8 @@ footer{
 
 /* Menu panel */
 #menu {
-  background-color: var(--block);
+  margin-left: 20px;
+  background-color: var(--section);
   list-style-type: none;
   text-wrap: nowrap;
   flex-wrap: wrap;
