@@ -3,51 +3,98 @@
   height: 700px;
 }
 
-/* Aktualnosci */
+/* Aktualności */
 #aktualnosci-section {
   min-height: 440px;
+  background-color: var(--section);
+  padding: 60px 20px;
   text-align: center;
 }
 
-#aktualnosci-section h1 {
-  font-weight: 500;
-  font-size: 24px;
-  color: var(--text-color);
-  margin-bottom: 20px;
+.aktualnosci-wrapper {
+  position: relative;
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 30px;
+  overflow: hidden;
 }
 
 #aktualnosci {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  gap: 30px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 20px 10px;
+  scrollbar-width: none;
+}
+#aktualnosci::-webkit-scrollbar {
+  display: none;
 }
 
 .aktualnosc {
-  margin-block: 20px;
-  padding-bottom: 10px;
-  background-color: #ebe5c2b3;
+  max-width: 300px;
+  background-color: #fff;
   border-radius: var(--radius);
-  width: 350px;
-  max-height: 350px;
   box-shadow: var(--box-shadow);
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
   overflow: hidden;
+}
+
+.aktualnosc:hover {
+  transform: scale(1.02);
 }
 
 .aktualnosc img {
   width: 100%;
-  height: 200px;
+  height: 180px;
   object-fit: cover;
 }
 
-.aktualnosc a {
-  font-weight: 500;
-  font-size: 18px;
+.aktualnosc h3 {
+  font-size: 20px;
+  margin: 12px;
 }
 
-.aktualnosc a h3 {
-  transition: all 0.3s ease;
+.aktualnosc span {
+  font-size: 14px;
+  color: var(--accent);
+  margin-left: 12px;
+  display: inline-block;
+  margin-bottom: 12px;
 }
 
-.aktualnosc a:hover h3 {
-  color: #8f8f8f;
+.scroll-button {
+  transform: translateY(-50%);
+  background: var(--accent);
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: var(--radius);
+  box-shadow: var(--box-shadow);
+  transition: background 0.3s;
+}
+
+.scroll-button:hover {
+  background: var(--accent-dark);
+}
+
+/* .scroll-button.left {
+  left: -10px;
+}
+.scroll-button.right {
+  right: -10px;
+} */
+
+@media (max-width: 768px) {
+  .scroll-button {
+    display: none;
+  }
+
+  #aktualnosci {
+    flex-direction: column;
+    align-items: center;
+    max-height: 730px;
+  }
 }
