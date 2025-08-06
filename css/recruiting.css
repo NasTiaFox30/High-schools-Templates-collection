@@ -1,0 +1,34 @@
+.recruit-board {
+    perspective: 1000px; 
+    margin: 0 auto;
+    position: relative;
+    max-width: 900px;
+    height: 600px;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.recruit-board.flipped {
+    transform: rotateY(180deg);
+}
+
+.board-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color: var(--background);
+    border: 10px solid #444239;
+    border-radius: var(--radius);
+    padding: 20px;
+    box-shadow: var(--box-shadow);
+}
+
+/* animacja */
+.board-front {
+    transform: rotateY(0deg);
+}
+.board-back {
+    transform: rotateY(180deg);
+    background-color: #fff;
+}
