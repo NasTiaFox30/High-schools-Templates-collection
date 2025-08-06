@@ -1,6 +1,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,24 +9,105 @@ html {
   left: 0;
 }
 
- /* Color palette: */
+/* Default variables */
 :root {
   --background: #EBE5C2;
   --header: #F8F3D9;
   --block: #706D54;
   --section: #B9B28A;
   --footer: #504B38;
+
+  --text-color: #3B3B1A;
+  --text-hover: #bdbdbd;
+
+  --box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  --radius: 10px;
 }
 
 body {
-  /* Default Font  */
   background-color: var(--background);
   font-family: "Titillium Web", sans-serif;
   font-weight: 500;
   font-style: normal;
-
 }
 
+/* Fonts */
+.playwrite-au-qld-font {
+  font-family: "Playwrite AU QLD", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.castoro-titling-regular {
+  font-family: "Castoro Titling", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* General */
+a {
+  text-decoration: none;
+  transition: all 0.3s ease;
+  color: var(--text-color);
+}
+a:hover {
+  color: var(--text-hover);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+textarea {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #9e9e9e;
+  border-radius: 0;
+  outline: none;
+  height: 3rem;
+  width: 100%;
+  font-size: 16px;
+  margin: 0 0 8px 0;
+  padding: 0;
+}
+
+input:focus,
+textarea:focus {
+  border-bottom: 2px solid var(--section);
+  box-shadow: 0 1px 0 0 var(--section);
+}
+
+/* Buttons */
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  width: 200px;
+  height: 50px;
+  border-radius: 5px;
+  border-style: none;
+  background-color: var(--block);
+  color: #fff;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+.button:hover {
+  background-color: var(--text-hover);
+  cursor: pointer;
+}
+
+#aplikuj_link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 21px;
+}
+
+/* Header, Main, Footer*/
 header {
   background: var(--header);
   display: flex;
@@ -36,27 +118,30 @@ header {
   min-height: 100px;
   z-index: 1;
   padding-bottom: 5px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.20);
+  box-shadow: var(--box-shadow);
 }
+
 main {
   margin-top: 100px;
 }
-footer{
-    background-color: var(--footer);
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+
+footer {
+  background-color: var(--footer);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
-section{
+
+section {
   background-color: var(--section);
   padding: 20px;
   width: 100%;
 }
 
-#info_firm{
+#info_firm {
   text-align: end;
   font-weight: 400;
   font-size: 15px;
@@ -64,33 +149,29 @@ section{
   margin-top: 10px;
 }
 
-/* Menu panel */
+/* Menu */
 #menu {
   border-radius: 5px;
   background-color: var(--section);
   list-style-type: none;
-  text-wrap: nowrap;
   flex-wrap: wrap;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
+
 #menu li {
   padding-inline: 20px;
 }
+
 #menu a {
   font-weight: 400;
   font-size: 21px;
-  color: #3B3B1A;
-  text-decoration-line: none;
   display: flex;
-  transition: all 0.3s ease;
-}
-#menu a:hover {
-  color: #bdbdbd;
 }
 
-#flex-menu{
+/* Header logo and flex container */
+#flex-menu {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -102,46 +183,37 @@ section{
   max-height: 100px;
   margin-right: 20px;
 }
+
 #logo-container a {
   display: flex;
   align-items: center;
   text-decoration: none;
   color: #000;
 }
-#logo{
+
+#logo {
   max-width: 100px;
   max-height: 100px;
 }
 
-/* Fonts */
-.playwrite-au-qld-font {
-  font-family: "Playwrite AU QLD", cursive;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-.castoro-titling-regular {
-  font-family: "Castoro Titling", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-#powitanie{
+/* Powitanie */
+#powitanie {
   background-color: #b9b28a26;
   width: 100%;
   height: 700px;
-  
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
-#powitanie_text{
+
+#powitanie_text {
   border-radius: 20px;
   width: 80%;
- background-color: #b9b28aa9;
+  background-color: #b9b28aa9;
 }
+
 #powitanie_background {
   position: fixed;
   top: 0;
@@ -149,173 +221,87 @@ section{
   width: 100%;
   height: 100%;
   z-index: -1;
-
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-image: url('./media/photo1.jpg');
-
 }
 
-#aktualnosci-section{
-  min-height: 440px;
-  text-align: center;
-}
-#aktualnosci-section h1{
-  font-weight: 500;
-  font-size: 24px;
-  color: #3B3B1A;
-  margin-bottom: 20px;
-}
-#aktualnosci{
+/* Kontakt */
+#contacts-section {
+  background-color: var(--background);
+  padding: 20px;
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
 }
-.aktualnosc{    
-  margin-block: 20px;
-  padding-bottom: 10px;
-  background-color: #ebe5c2b3;
-  border-radius: 10px;
-  width: 350px;
-  max-height: 350px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
-  overflow: hidden;
-}
-.aktualnosc img{
+
+.contact-content {
+  display: flex;
+  align-items: flex-start;
   width: 100%;
-  height: 200px;
-  clip-path: content-box;
-  object-fit: cover;
+  justify-content: space-evenly;
 }
-.aktualnosc a{
-  text-decoration: none;
-  color: #3B3B1A;
+
+.contact-form .input-field input,
+.contact-form .input-field textarea {
+  border-bottom: 1px solid var(--section);
+  color: var(--footer);
+}
+
+.contact-form .input-field input:focus,
+.contact-form .input-field textarea:focus {
+  border-bottom: 2px solid var(--section);
+  box-shadow: 0 1px 0 0 var(--section);
+}
+
+.contact-form .input-field label {
+  color: var(--footer);
+}
+
+.contact-info h3 {
+  font-size: 24px;
+  margin-bottom: 1rem;
+}
+
+.contact-info p {
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+#contacts {
+  margin: 20px;
+  text-align: center;
   font-weight: 500;
-  font-size: 18px;
-}
-.aktualnosc a h3 {
- transition: all 0.3s ease;
-}
-.aktualnosc a:hover h3 {
-  color: #8f8f8f;
+  color: var(--text-color);
 }
 
+.map-placeholder {
+  width: 100%;
+  height: 300px;
+  background-color: var(--background);
+  border: 2px dashed var(--section);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--footer);
+  font-style: italic;
+  margin-top: 2rem;
+}
 
-#googleMap{
+#googleMap {
   width: 100%;
   height: 100%;
   border: 0;
 }
 
-.button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 20px;
-  width: 200px;
-  height: 50px;
-  border-radius: 5px;
-  border-style: none;
-  background-color: var(--block);
-  text-decoration: none;
-  transition: all 0.3s ease;
-  color: #fff;
-  font-size: 18px;
-}
-.button:hover {
-  background-color: #bdbdbd;
-  cursor: pointer;
-}
-
-#aplikuj_link{
-  color: #fff;
-  text-decoration: none; 
-  font-weight: 500;
-  font-size: 21px;
-}
-
-#contacts-section {
-    background-color: var(--background);
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.contact-content {
-    display: flex;
-    align-items: flex-start;
-    width: 100%;
-    justify-content: space-evenly;
-}
-.contact-form .input-field input,
-.contact-form .input-field textarea {
-    border-bottom: 1px solid #B9B28A;
-    color: #504B38;
-}
-
-.contact-form .input-field input:focus,
-.contact-form .input-field textarea:focus {
-    border-bottom: 2px solid #B9B28A;
-    box-shadow: 0 1px 0 0 #B9B28A;
-}
-
-.contact-form .input-field label {
-    color: #504B38;
-}
-.contact-info h3 {
-    font-size: 24px;
-    margin-bottom: 1rem;
-}
-.contact-info p {
-    margin-bottom: 0.5rem;
-    display: flex;
-    align-items: center;
-}
-
-
-#contacts{
-  margin: 20px;
-  text-align: center;
-  font-weight: 500;
-  color: #3B3B1A;
-}
-#contacts a {
-  color: #3B3B1A;
-  text-decoration: none;
-}
-.map-placeholder {
-    width: 100%;
-    height: 300px;
-    background-color: #EBE5C2;
-    border: 2px dashed #B9B28A;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #504B38;
-    font-style: italic;
-    margin-top: 2rem;
-}
-
-input, textarea {
-     background-color: transparent;
-    border: none;
-    border-bottom: 1px solid #9e9e9e;
-    border-radius: 0;
-    outline: none;
-    height: 3rem;
-    width: 100%;
-    font-size: 16px;
-    margin: 0 0 8px 0;
-    padding: 0;
-}
-input+label:after{
+input + label:after {
   display: block;
   content: "";
   position: absolute;
   top: 100%;
   left: 0;
   opacity: 0;
-  transition: .2s opacity ease-out, .2s color ease-out;
+  transition: 0.2s opacity ease-out, 0.2s color ease-out;
 }
