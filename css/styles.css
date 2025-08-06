@@ -139,6 +139,7 @@ section {
   background-color: var(--section);
   padding: 20px;
   width: 100%;
+  padding: 60px 20px;
 }
 
 #info_firm {
