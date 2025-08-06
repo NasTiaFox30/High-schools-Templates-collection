@@ -11,20 +11,20 @@
   margin-bottom: 20px;
 }
 
-.timetable table {
+#plan-container table {
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 30px;
 }
 
-.timetable th,
-.timetable td {
+#plan-container th,
+#plan-container td {
   border: 1px solid #ccc;
   padding: 10px;
   text-align: left;
 }
 
-.timetable th {
+#plan-container th {
   background-color: #f5f5f5;
 }
 
