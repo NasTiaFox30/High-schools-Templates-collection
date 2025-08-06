@@ -52,51 +52,16 @@
 
         <section id="plan-section">
             <h1>Plan lekcji</h1>
-            <p>Poniżej znajduje się tygodniowy plan lekcji dla wybranych klas:</p>
 
-            <div class="timetable">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Dzień</th>
-                            <th>Klasa 1A</th>
-                            <th>Klasa 2B</th>
-                            <th>Klasa 3C</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Poniedziałek</td>
-                            <td>Matematyka, Historia, J. Polski</td>
-                            <td>Biologia, Chemia, WF</td>
-                            <td>Fizyka, Informatyka, Geografia</td>
-                        </tr>
-                        <tr>
-                            <td>Wtorek</td>
-                            <td>Angielski, Matematyka, Plastyka</td>
-                            <td>J. Polski, Historia, Biologia</td>
-                            <td>Matematyka, WOS, WF</td>
-                        </tr>
-                        <tr>
-                            <td>Środa</td>
-                            <td>WF, Informatyka, Technika</td>
-                            <td>Fizyka, Matematyka, Religia</td>
-                            <td>Angielski, Chemia, J. Polski</td>
-                        </tr>
-                        <tr>
-                            <td>Czwartek</td>
-                            <td>Geografia, Biologia, J. Polski</td>
-                            <td>Informatyka, Matematyka, Historia</td>
-                            <td>Plastyka, WF, Fizyka</td>
-                        </tr>
-                        <tr>
-                            <td>Piątek</td>
-                            <td>WOS, Angielski, Religia</td>
-                            <td>J. Polski, WF, Chemia</td>
-                            <td>Matematyka, Historia, Biologia</td>
-                        </tr>
-                    </tbody>
-                </table>
+            <label for="classSelect"><strong>Wybierz klasę:</strong></label>
+            <select id="classSelect">
+                <option value="1A">Klasa 1A</option>
+                <option value="2B">Klasa 2B</option>
+                <option value="3C">Klasa 3C</option>
+            </select>
+
+            <div id="plan-container">
+                <!-- dynamiczny plan -->
             </div>
         </section>
 
