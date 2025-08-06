@@ -86,15 +86,3 @@
 .scroll-button.right {
   right: -10px;
 } */
-
-@media (max-width: 768px) {
-  .scroll-button {
-    display: none;
-  }
-
-  #aktualnosci {
-    flex-direction: column;
-    align-items: center;
-    max-height: 730px;
-  }
-}
