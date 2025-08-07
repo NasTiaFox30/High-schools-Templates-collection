@@ -70,7 +70,7 @@ section {
   background-color: var(--section);
   padding: 60px 80px;
   width: 100%;
-  scroll-margin-top: 80px;
+  scroll-margin-top: 150px;
 }
 
 #flex-menu {
