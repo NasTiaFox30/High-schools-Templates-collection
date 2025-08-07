@@ -68,7 +68,7 @@ header {
 }
 section {
   background-color: var(--section);
-  padding: 60px 80px;
+  padding: var(--spacing-xl) var(--spacing-xl);
   width: 100%;
   scroll-margin-top: 150px;
 }
