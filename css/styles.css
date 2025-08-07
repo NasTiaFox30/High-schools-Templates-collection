@@ -232,7 +232,6 @@ section {
 /* Kontakt */
 #contacts-section {
   background-color: var(--background);
-  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
