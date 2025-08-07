@@ -1,0 +1,73 @@
+/* Aktualności */
+#aktualnosci-section {
+  min-height: 440px;
+  text-align: center;
+}
+
+.aktualnosci-wrapper {
+  position: relative;
+  margin: 0 auto;
+  padding: 0 30px;
+  overflow: hidden;
+}
+
+#aktualnosci {
+  display: flex;
+  gap: 30px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 20px 10px;
+  scrollbar-width: none;
+}
+#aktualnosci::-webkit-scrollbar {
+  display: none;
+}
+
+.aktualnosc {
+  max-width: 300px;
+  background-color: #fff;
+  border-radius: var(--radius);
+  box-shadow: var(--box-shadow);
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+.aktualnosc:hover {
+  transform: scale(1.02);
+}
+
+.aktualnosc img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.aktualnosc h3 {
+  font-size: 20px;
+  margin: 12px;
+}
+
+.aktualnosc span {
+  font-size: 14px;
+  color: var(--accent);
+  margin-left: 12px;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+.scroll-button {
+  transform: translateY(-50%);
+  background: var(--accent);
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: var(--radius);
+  box-shadow: var(--box-shadow);
+  transition: background 0.3s;
+}
+
+.scroll-button:hover {
+  background: var(--accent-dark);
+}
