@@ -187,48 +187,46 @@ section {
   color: var(--color-accent-inverse);
 }
 
-
-#aktualnosci-section {
-  padding: var(--spacing-xl) var(--spacing-lg);
-  background-color: var(--background-light);
-}
-
-.aktualnosci-wrapper {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: var(--spacing-lg);
-}
-
-.aktualnosc {
-  border: 1px solid var(--color-border);
-  padding: var(--spacing-md);
+#contactBG-box{
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   transition: var(--transition-speed);
 }
-
-.aktualnosc:hover {
-  background: var(--color-accent);
-  color: var(--color-accent-inverse);
+#contactBG-box.show{
+  visibility: visible;
+  background-color: #00000070;
+  opacity: 1;
+  z-index: 100;
 }
 
-.aktualnosc img {
-  width: 100%;
-  height: auto;
-  margin-bottom: var(--spacing-md);
-}
-
-#contacts-section {
-  padding: var(--spacing-xl) var(--spacing-lg);
-}
-
-.contact-content {
+#contacts {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   gap: var(--spacing-lg);
 }
-
-.contact-form,
-.contact-info {
-  flex: 1 1 300px;
+.contact-form {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+}
+#contact-content{
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 20px;
+  background: #efefef;
+  margin: auto;
+  margin-top: 200px;
+  max-width: 500px;
+  box-shadow: var(--box-shadow);
 }
 
 .input-field {
