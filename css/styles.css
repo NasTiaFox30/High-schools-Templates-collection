@@ -109,17 +109,20 @@ section {
   border: none;
 }
 
+/* Powitanie */
 #powitanie {
   padding: var(--spacing-xl) var(--spacing-lg);
   text-align: center;
   position: relative;
-  height: 100vh;
   overflow: hidden;
   perspective: 1px;
   transform-style: preserve-3d;
+  height: 860px;
 }
 #powitanie_content {
   align-items: center;
+  margin-top: 150px;
+  z-index: 1;
 }
 
 #powitanie::before {
@@ -149,9 +152,6 @@ section {
   background-repeat: no-repeat;
 }
 
-#powitanie h2{
-  margin-top: 200px;
-}
 #powitanie h2,
 #powitanie h3 {
   font-size: 2rem;
