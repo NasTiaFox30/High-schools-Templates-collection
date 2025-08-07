@@ -280,3 +280,15 @@ button.button:hover {
   height: 100%;
   border: 0;
 }
+
+/* Animation */
+.anim {
+  transition: var(--transition-speed);
+  opacity: 0;
+  transform: translateX(-60%);
+  transition: opacity var(--transition-speed), transform var(--transition-speed);
+}
+.active{
+  opacity: 1;
+  transform: translateX(0%);
+}
