@@ -1,0 +1,249 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+}
+
+:root {
+  --background: #ffffff;
+  --header: #F8F3D9;
+  --block: #bfbfbf;
+  --section: rgb(219, 219, 219);
+  --footer: #121212;
+
+  --text-color: #000000;
+
+  --color-accent: #0000000a;
+  --color-accent-inverse: #ffffff;
+  --color-border: #000000;
+  --background-light: #f9f9f9;
+
+  --font-main: 'Titillium Web', sans-serif;
+  --font-alt: 'Playwrite AU QLD', serif;
+  --font-deco: 'Castoro Titling', serif;
+
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 4rem;
+
+  --box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  --radius: 1px;
+  --transition-speed: 0.3s;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--background);
+  color: var(--text-color);
+   overflow-x: hidden;
+  overflow-y: auto;
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+  transition: var(--transition-speed);
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: var(--spacing-md);
+}
+
+header {
+  background-color: var(--background);
+  border-bottom: 1px solid var(--color-border);
+  padding: var(--spacing-md) var(--spacing-lg);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+#flex-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo-container {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+#logo {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+#menu {
+  display: flex;
+  gap: var(--spacing-lg);
+  list-style: none;
+}
+
+#menu a:hover {
+  text-decoration: underline;
+}
+
+#menu-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+}
+
+#powitanie {
+  padding: var(--spacing-xl) var(--spacing-lg);
+  text-align: center;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  perspective: 1px;
+  transform-style: preserve-3d;
+}
+#powitanie_content {
+  align-items: center;
+}
+
+#powitanie::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('../media/BG.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: translateZ(-1px) scale(2);
+  z-index: -1;
+}
+#powitanie::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('../media/BG_decoration.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#powitanie h2{
+  margin-top: 200px;
+}
+#powitanie h2,
+#powitanie h3 {
+  font-size: 2rem;
+  position: relative;
+  
+}
+
+.button {
+  margin-top: 2rem;
+}
+.button a {
+  display: inline-block;
+  border: 1px solid var(--color-border);
+  padding: var(--spacing-sm) var(--spacing-lg);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.button a:hover {
+  background: var(--color-accent);
+  color: var(--color-accent-inverse);
+}
+
+
+#aktualnosci-section {
+  padding: var(--spacing-xl) var(--spacing-lg);
+  background-color: var(--background-light);
+}
+
+.aktualnosci-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.aktualnosc {
+  border: 1px solid var(--color-border);
+  padding: var(--spacing-md);
+  transition: var(--transition-speed);
+}
+
+.aktualnosc:hover {
+  background: var(--color-accent);
+  color: var(--color-accent-inverse);
+}
+
+.aktualnosc img {
+  width: 100%;
+  height: auto;
+  margin-bottom: var(--spacing-md);
+}
+
+#contacts-section {
+  padding: var(--spacing-xl) var(--spacing-lg);
+}
+
+.contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-lg);
+}
+
+.contact-form,
+.contact-info {
+  flex: 1 1 300px;
+}
+
+.input-field {
+  margin-bottom: var(--spacing-lg);
+  display: flex;
+  flex-direction: column;
+}
+
+.input-field input,
+.input-field textarea {
+  border: 1px solid var(--color-border);
+  padding: var(--spacing-sm);
+  background: transparent;
+  font-size: 1rem;
+}
+
+.input-field label {
+  margin-bottom: var(--spacing-sm);
+  font-weight: 600;
+}
+
+button.button {
+  background: transparent;
+  border: 1px solid var(--color-border);
+  padding: var(--spacing-sm) var(--spacing-md);
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button.button:hover {
+  background: var(--color-accent);
+  color: var(--color-accent-inverse);
+}
+
+footer {
+  text-align: center;
+  padding: var(--spacing-lg);
+  background-color: var(--footer);
+  border-top: 1px solid var(--color-border);
+}
