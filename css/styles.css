@@ -23,6 +23,7 @@ html {
   --box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
   --radius: 10px;
   --accent: #cccccc;
+  --transition-speed: all 0.3s ease;
 }
 
 body {
@@ -49,7 +50,7 @@ body {
 /* General */
 a {
   text-decoration: none;
-  transition: all 0.3s ease;
+  transition: var(--transition-speed);
   color: var(--text-color);
 }
 a:hover {
@@ -94,7 +95,7 @@ textarea:focus {
   background-color: var(--block);
   color: #fff;
   font-size: 18px;
-  transition: all 0.3s ease;
+  transition: var(--transition-speed);
 }
 .button:hover {
   background-color: var(--text-hover);
