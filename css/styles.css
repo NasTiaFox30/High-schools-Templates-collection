@@ -70,6 +70,14 @@ header {
   top: 0;
   z-index: 100;
 }
+footer {
+  text-align: center;
+  padding: var(--spacing-lg);
+  background-color: var(--footer);
+  border-top: 1px solid var(--color-border);
+  color: #fff;
+}
+
 section {
   background-color: var(--section);
   padding: var(--spacing-xl) var(--spacing-xl);
@@ -254,13 +262,6 @@ button.button {
 button.button:hover {
   background: var(--color-accent);
   color: var(--color-accent-inverse);
-}
-
-footer {
-  text-align: center;
-  padding: var(--spacing-lg);
-  background-color: var(--footer);
-  border-top: 1px solid var(--color-border);
 }
 
 .map-placeholder {
