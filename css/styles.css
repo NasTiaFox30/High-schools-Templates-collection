@@ -179,6 +179,11 @@ section {
   
 }
 
+i img {
+  width: 100px;
+  height: 100px;
+}
+
 .button {
   margin-top: 2rem;
 }
