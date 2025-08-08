@@ -103,6 +103,13 @@ section {
   object-fit: cover;
   border-radius: 50%;
 }
+#logo-container a{
+  display: flex;
+  align-items: center;
+}
+#logo-container h1 {
+  margin-bottom: 0;
+}
 
 #menu {
   display: flex;
