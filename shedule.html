@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liceum — Plan lekcji</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/shedule.css">
+
+    <link rel="stylesheet" href="./css/mobile_adaptation.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Playwrite+AU+QLD:wght@100..400&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="flex-menu">
+            <div id="logo-container">
+                <a href="index.html">
+                    <img id="logo" src="./media/Logo.jpeg" alt="Logo">
+                    <h1 class="castoro-titling-regular">Liceum_Minimal</h1>
+                </a>
+            </div>
+
+            <button id="menu-toggle">&#9776;</button>
+            <nav id="menu">
+                <li><a href="./index.html #about-section">O nas</a></li>
+                <li><a href="./recruiting.html">Rekrutacja</a></li>
+                <li><a href="./kadra.html">Kadra</a></li>
+                <li><a href="./shedule.html">Plan zajęć</a></li>
+                <li><a href="./index.html #aktualnosci-section">Aktualności</a></li>
+                <li><a href="./index.html?showContactForm=true#contacts-section" class="contact-button">Kontakt</a>
+                </li>
+            </nav>
+        </div>
+    </header>
+
+    <section id="organizacja-section">
+        <div id="organizacja-section_content">
+            <h1 class="section-title">Organizacja roku szkolnego 2025/2026</h1>
+            <div class="calendar-grid">
+                <div class="calendar-item">
+                    <i class="fas fa-calendar-day"></i>
+                    <h3>Rozpoczęcie roku</h3>
+                    <p>2 września 2025</p>
+                </div>
+                <div class="calendar-item">
+                    <h3>Święta Bożego Narodzenia</h3>
+                    <p>23 grudnia 2025 – 2 stycznia 2026</p>
+                </div>
+                <div class="calendar-item">
+                    <h3>Ferie zimowe</h3>
+                    <p>10 lutego – 21 lutego 2026</p>
+                </div>
+                <div class="calendar-item">
+                    <h3>Wiosenna przerwa świąteczna</h3>
+                    <p>9 kwietnia – 14 kwietnia 2026</p>
+                </div>
+                <div class="calendar-item">
+                    <h3>Egzaminy maturalne</h3>
+                    <p>maj 2026</p>
+                </div>
+                <div class="calendar-item">
+                    <h3>Zakończenie roku</h3>
+                    <p>26 czerwca 2026</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main>
+
+        <section id="plan-section">
+            <h1 class="section-title">Plan lekcji</h1>
+
+            <div class="class-selector">
+                <label for="classSelect"><i class="fas fa-users"></i> Wybierz klasę:</label>
+                <select id="classSelect">
+                    <option value="1A">Klasa 1A - profil matematyczno-fizyczny</option>
+                    <option value="2B">Klasa 2B - profil biologiczno-chemiczny</option>
+                    <option value="3C">Klasa 3C - profil humanistyczny</option>
+                </select>
+            </div>
+
+            <div id="plan-container">
+                <!-- dynamiczny plan -->
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <h2>Liceum_Minimal</h2>
+        <p id="info_firm">&copy; 2025 Stworzone przez GLP</p>
+        <!-- Creator: Anastasiia Bzova 2025 -->
+    </footer>
+
+    <script src="./scripts/shedule.js"></script>
+    <script src="./scripts/menu.js"></script>
+    <script src="./scripts/paralax.js"></script>
+
+    <script>
+        paralaxEffect('organizacja-section');
+    </script>
+</body>
+
+</html>
