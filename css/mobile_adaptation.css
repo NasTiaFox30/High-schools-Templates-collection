@@ -63,8 +63,12 @@ footer h2 {
 }
 
   /* Powitanie */
+#main-content-index{
+  margin-top: 250px;
+}
 #powitanie {
   padding: 20px 10px;
+  height: 1000px;
 }
 #powitanie_content {
   width: 100%;
