@@ -295,38 +295,3 @@ button:hover {
     width: 30px;
     height: 30px;
 }
-
-
-
-
-
-
-
-
-
-
-
-/* Адаптація */
-@media (max-width: 768px) {
-    .recruiting-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .benefits-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .profile-tabs {
-        grid-template-columns: 1fr;
-    }
-    
-    .recruiting-footer {
-        flex-direction: column;
-        gap: var(--spacing-lg);
-        text-align: center;
-    }
-    
-    .contact-info p {
-        justify-content: center;
-    }
-}
