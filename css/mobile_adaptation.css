@@ -145,6 +145,29 @@ footer h2 {
     font-size: 1rem;
 }
 
+/* Shedule */
+  #main-content-shedule {
+    margin-top: 450px;
+  }
+  .calendar-grid {
+      grid-template-columns: 1fr 1fr;
+  }
+  
+  .schedule-table {
+      font-size: 0.9rem;
+  }
+  
+  .schedule-table th, 
+  .schedule-table td {
+      padding: var(--spacing-sm);
+  }
+  #organizacja-section,
+  #plan-section {
+    height: 1200px;
+    padding: var(--spacing-lg) var(--spacing-md);
+  }
+
+
 /* Kontakt */
 .contact-content {
   flex-direction: column;
@@ -162,4 +185,20 @@ footer h2 {
 #contacts {
   margin: 10px 0;
 }
+}
+
+
+@media (max-width: 480px) {
+    #main-content-shedule {
+      margin-top: 1000px;
+    }
+    .calendar-grid {
+        grid-template-columns: 1fr;
+    }
+    #organizacja-section,
+    #plan-section {
+      height: 2200px;
+      padding: var(--spacing-lg) var(--spacing-md);
+    }
+    
 }
