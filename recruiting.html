@@ -161,81 +161,88 @@
                             </ul>
                         </div>
                     </div>
+                </div>
 
-                    <div class="recruiting-card cta-form">
-                        <div class="form-header">
-                            <h3>Złóż podanie online</h3>
-                            <p>Wypełnij formularz, a skontaktujemy się z Tobą w ciągu 48 godzin</p>
+                <div id="apply-section-button">
+                    <button id="apply-button">
+                        <a href="#recruitment-form" class="apply-button">Aplikuj online</a>
+                    </button>
+                </div>
+
+                <div class="recruiting-card apply-form">
+                    <div class="form-header">
+                        <h3>Złóż podanie online</h3>
+                        <p>Wypełnij formularz, a skontaktujemy się z Tobą w ciągu 48 godzin</p>
+                    </div>
+
+                    <form id="recruitment-form" class="modern-form">
+                        <div class="form-step active" data-step="1">
+                            <div class="input-group">
+                                <label for="fullname">Imię i nazwisko*</label>
+                                <input type="text" id="fullname" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="birthdate">Data urodzenia*</label>
+                                <input type="date" id="birthdate" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="previous-school">Poprzednia szkoła</label>
+                                <input type="text" id="previous-school">
+                            </div>
+                            <button type="button" class="next-step">Dalej →</button>
                         </div>
 
-                        <form id="recruitment-form" class="modern-form">
-                            <div class="form-step active" data-step="1">
-                                <div class="input-group">
-                                    <label for="fullname">Imię i nazwisko*</label>
-                                    <input type="text" id="fullname" required>
-                                </div>
-                                <div class="input-group">
-                                    <label for="birthdate">Data urodzenia*</label>
-                                    <input type="date" id="birthdate" required>
-                                </div>
-                                <div class="input-group">
-                                    <label for="previous-school">Poprzednia szkoła</label>
-                                    <input type="text" id="previous-school">
-                                </div>
+                        <div class="form-step" data-step="2">
+                            <div class="input-group">
+                                <label for="email">Email*</label>
+                                <input type="email" id="email" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="phone">Telefon*</label>
+                                <input type="tel" id="phone" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="profile">Wybierz profil*</label>
+                                <select id="profile" required>
+                                    <option value="">-- Wybierz --</option>
+                                    <option value="science">Profil naukowy</option>
+                                    <option value="humanities">Profil humanistyczny</option>
+                                    <option value="it">Profil informatyczny</option>
+                                    <option value="bilingual">Profil dwujęzyczny</option>
+                                </select>
+                            </div>
+                            <div class="form-navigation">
+                                <button type="button" class="prev-step">← Wstecz</button>
                                 <button type="button" class="next-step">Dalej →</button>
                             </div>
-
-                            <div class="form-step" data-step="2">
-                                <div class="input-group">
-                                    <label for="email">Email*</label>
-                                    <input type="email" id="email" required>
-                                </div>
-                                <div class="input-group">
-                                    <label for="phone">Telefon*</label>
-                                    <input type="tel" id="phone" required>
-                                </div>
-                                <div class="input-group">
-                                    <label for="profile">Wybierz profil*</label>
-                                    <select id="profile" required>
-                                        <option value="">-- Wybierz --</option>
-                                        <option value="science">Profil naukowy</option>
-                                        <option value="humanities">Profil humanistyczny</option>
-                                        <option value="it">Profil informatyczny</option>
-                                        <option value="bilingual">Profil dwujęzyczny</option>
-                                    </select>
-                                </div>
-                                <div class="form-navigation">
-                                    <button type="button" class="prev-step">← Wstecz</button>
-                                    <button type="button" class="next-step">Dalej →</button>
-                                </div>
-                            </div>
-
-                            <div class="form-step" data-step="3">
-                                <div class="input-group">
-                                    <label for="achievements">Osiągnięcia (opcjonalne)</label>
-                                    <textarea id="achievements"
-                                        placeholder="Opisz swoje osiągnięcia szkolne, konkursowe, sportowe..."></textarea>
-                                </div>
-                                <div class="input-group">
-                                    <label for="motivation">List motywacyjny*</label>
-                                    <textarea id="motivation" required
-                                        placeholder="Dlaczego chcesz dołączyć do naszej szkoły? (min. 100 znaków)"></textarea>
-                                </div>
-                                <div class="form-navigation">
-                                    <button type="button" class="prev-step">← Wstecz</button>
-                                    <button type="submit" class="submit-form">Wyślij aplikację</button>
-                                </div>
-                            </div>
-                        </form>
-
-                        <div class="alternative-options">
-                            <p>Preferujesz tradycyjną formę?</p>
-                            <a href="#" class="download-link">Pobierz formularz PDF</a>
-                            <span>lub</span>
-                            <a href="mailto:rekrutacja@szkola.pl">Wyślij email</a>
                         </div>
+
+                        <div class="form-step" data-step="3">
+                            <div class="input-group">
+                                <label for="achievements">Osiągnięcia (opcjonalne)</label>
+                                <textarea id="achievements"
+                                    placeholder="Opisz swoje osiągnięcia szkolne, konkursowe, sportowe..."></textarea>
+                            </div>
+                            <div class="input-group">
+                                <label for="motivation">List motywacyjny*</label>
+                                <textarea id="motivation" required
+                                    placeholder="Dlaczego chcesz dołączyć do naszej szkoły? (min. 100 znaków)"></textarea>
+                            </div>
+                            <div class="form-navigation">
+                                <button type="button" class="prev-step">← Wstecz</button>
+                                <button type="submit" class="submit-form">Wyślij aplikację</button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <div class="alternative-options">
+                        <p>Preferujesz tradycyjną formę?</p>
+                        <a href="#" class="download-link">Pobierz formularz PDF</a>
+                        <span>lub</span>
+                        <a href="mailto:rekrutacja@szkola.pl">Wyślij email</a>
                     </div>
                 </div>
+
 
                 <div class="recruiting-footer">
                     <div class="contact-info">
