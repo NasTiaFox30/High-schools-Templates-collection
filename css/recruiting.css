@@ -2,13 +2,6 @@ main{
     margin-top: 0 ;
 }
 
-/* Стилі для секції рекрутингу */
-#recruiting-section {
-    background-color: var(--section);
-    padding: var(--spacing-xl) 0;
-    border-top: 1px solid var(--color-border);
-    border-bottom: 1px solid var(--color-border);
-}
 
 .recruiting-container {
     max-width: 1200px;
@@ -20,35 +13,31 @@ main{
     text-align: center;
     margin-bottom: var(--spacing-xl);
 }
-
 .recruiting-header h2 {
-    font-family: var(--font-alt);
+    font-family: var(--font-main);
     font-size: 2rem;
     text-transform: uppercase;
     margin-bottom: var(--spacing-sm);
 }
-
 .recruiting-header h2 span {
     display: block;
     font-family: var(--font-main);
     font-size: 1.5rem;
     margin-top: var(--spacing-sm);
 }
-
 .header-decoration {
     width: 60px;
     height: 2px;
     background: var(--color-border);
     margin: var(--spacing-md) auto;
 }
-
 .subtitle {
     max-width: 600px;
     margin: 0 auto;
     font-size: 1.1rem;
 }
 
-/* Сітка карток */
+/* Recruiting cards */
 .recruiting-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -61,15 +50,7 @@ main{
     border: 1px solid var(--color-border);
     padding: var(--spacing-lg);
 }
-
-.card-icon {
-    font-size: 1.5rem;
-    margin-bottom: var(--spacing-md);
-    color: var(--text-color);
-}
-
 .recruiting-card h3 {
-    font-family: var(--font-alt);
     font-size: 1.3rem;
     margin-bottom: var(--spacing-md);
     text-transform: uppercase;
@@ -77,26 +58,20 @@ main{
     padding-bottom: var(--spacing-sm);
 }
 
-/* Ось часу */
+/* Main-ifo card */
 .timeline {
     list-style: none;
 }
-
 .timeline li {
     display: flex;
     margin-bottom: var(--spacing-md);
 }
-
 .date {
     min-width: 100px;
     font-weight: bold;
 }
 
-.event {
-    flex: 1;
-}
-
-/* Переваги */
+/* Benefit card */
 .benefits-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -107,23 +82,24 @@ main{
     text-align: center;
     padding: var(--spacing-md);
 }
-
 .benefit-item i {
     font-size: 1.5rem;
     margin-bottom: var(--spacing-sm);
     display: block;
 }
-
+.benefit-item i img {
+    width: 40px;
+    height: 40px;
+}
 .benefit-item h4 {
     font-size: 1rem;
     margin-bottom: var(--spacing-sm);
 }
-
 .benefit-item p {
     font-size: 0.9rem;
 }
 
-/* Профілі */
+/* Profiles card */
 .profile-tabs {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -137,41 +113,84 @@ main{
     border: 1px solid var(--color-border);
     cursor: pointer;
     font-size: 0.9rem;
+    transition: var(--transition-speed);
 }
-
+.tab:hover {
+    background: var(--color-accent);
+    transform: scale(0.95);
+}
 .tab.active {
     background: var(--color-accent);
-    color: var(--color-accent-inverse);
-}
-
-.tab i {
-    margin-right: var(--spacing-sm);
+    transform: scale(0.98);
 }
 
 .tab-content {
-    display: none;
+    display: table-column;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity var(--transition-speed), transform var(--transition-speed);
 }
-
 .tab-content.active {
     display: block;
+    visibility: visible;
+    opacity: 1;
+    transform: translate(0, 0);
 }
 
 .tab-content h4 {
     font-size: 1.1rem;
     margin-bottom: var(--spacing-sm);
 }
-
 .tab-content ul {
     padding-left: var(--spacing-md);
     margin-top: var(--spacing-sm);
 }
 
-/* Форма */
+
+/* Aplication */
+#apply-section-button{
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+}
+.apply-button {
+    display: inline-block;
+    padding: var(--spacing-md) var(--spacing-xl);
+    background-color: var(--color-border);
+    color: var(--background);
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+}
+.apply-button:hover {
+    background-color: var(--text-color);
+    color: var(--background-light);
+}
+button {
+    padding: var(--spacing-sm) var(--spacing-md);
+    background: transparent;
+    border: 1px solid var(--color-border);
+    cursor: pointer;
+    transition: var(--transition-speed);
+    transform: scale(1);
+}
+button:hover {
+    background: var(--color-accent);
+    transform: scale(0.95);
+}
+
+/* Forma */
+.apply-form {
+    display: none;
+}
+.apply-form.show {
+    display: block;
+}
+
 .form-header {
     text-align: center;
     margin-bottom: var(--spacing-lg);
 }
-
 .form-header h3 {
     font-size: 1.3rem;
     margin-bottom: var(--spacing-sm);
@@ -186,13 +205,11 @@ main{
 .input-group {
     margin-bottom: var(--spacing-md);
 }
-
 .input-group label {
     display: block;
     margin-bottom: var(--spacing-sm);
     font-weight: bold;
 }
-
 .input-group input,
 .input-group select,
 .input-group textarea {
@@ -201,7 +218,6 @@ main{
     border: 1px solid var(--color-border);
     background: var(--background);
 }
-
 .input-group textarea {
     min-height: 100px;
 }
@@ -212,41 +228,28 @@ main{
     margin-top: var(--spacing-lg);
 }
 
-/* Кнопки */
-button {
-    padding: var(--spacing-sm) var(--spacing-md);
-    background: transparent;
-    border: 1px solid var(--color-border);
-    cursor: pointer;
-    transition: var(--transition-speed);
-}
-
-button:hover {
-    background: var(--color-accent);
-    color: var(--color-accent-inverse);
-}
-
 .next-step,
 .submit-form {
     background: var(--color-border);
     color: var(--background);
 }
-
 .next-step:hover,
 .submit-form:hover {
     background: var(--text-color);
 }
 
-/* Альтернативні опції */
 .alternative-options {
     text-align: center;
     margin-top: var(--spacing-xl);
     padding-top: var(--spacing-md);
     border-top: 1px solid var(--color-border);
 }
-
 .alternative-options p {
     margin-bottom: var(--spacing-sm);
+}
+.alternative-options span {
+    display: block;
+    margin: var(--spacing-sm) 0;
 }
 
 .download-link {
@@ -257,12 +260,8 @@ button:hover {
     font-weight: bold;
 }
 
-.alternative-options span {
-    display: block;
-    margin: var(--spacing-sm) 0;
-}
 
-/* Футер */
+/* Recruit footer */
 .recruiting-footer {
     display: flex;
     justify-content: space-between;
@@ -270,12 +269,10 @@ button:hover {
     padding-top: var(--spacing-lg);
     border-top: 1px solid var(--color-border);
 }
-
 .contact-info h4 {
     font-size: 1.2rem;
     margin-bottom: var(--spacing-md);
 }
-
 .contact-info p {
     margin-bottom: var(--spacing-sm);
     display: flex;
@@ -287,15 +284,27 @@ button:hover {
     display: flex;
     gap: var(--spacing-md);
 }
-
 .social-media a {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 40px;
     height: 40px;
-    border: 1px solid var(--color-border);
 }
+.social-media a i img {
+    width: 30px;
+    height: 30px;
+}
+
+
+
+
+
+
+
+
+
+
 
 /* Адаптація */
 @media (max-width: 768px) {
