@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liceum — Recruiting</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/recruiting.css">
+
+    <link rel="stylesheet" href="./css/mobile_adaptation.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Playwrite+AU+QLD:wght@100..400&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="flex-menu">
+            <div id="logo-container">
+                <a href="index.html">
+                    <img id="logo" src="./media/Logo.jpeg" alt="Logo">
+                    <h1 class="castoro-titling-regular">Liceum_Minimal</h1>
+                </a>
+            </div>
+
+            <button id="menu-toggle">&#9776;</button>
+            <nav id="menu">
+                <li><a href="./index.html #about-section">O nas</a></li>
+                <li><a href="./recruiting.html">Rekrutacja</a></li>
+                <li><a href="./kadra.html">Kadra</a></li>
+                <li><a href="./shedule.html">Plan zajęć</a></li>
+                <li><a href="./index.html #aktualnosci-section">Aktualności</a></li>
+                <li><a href="#contacts-section" class="contact-button">Kontakt</a></li>
+            </nav>
+        </div>
+    </header>
+
+    <!-- <div id="powitanie">
+    
+                <div id="powitanie_text">
+                    <h2 class="titillium-web-regular">Witamy na stronie Nazwa_Liceum</h2>
+                    <h2 class="playwrite-au-qld-font">Dołącz do nas! Otwarta rekrutacja na rok szkolny 2025/2026</h2>
+                </div>
+    
+                <div class="button">
+                    <a id="aplikuj_link" href="V1/recruiting.html">Dowiedz się więcej</a>
+                </div>
+            </div> -->
+    <main>
+
+        <section id="recruiting-section">
+            <div class="recruiting-container">
+                <div class="recruiting-header">
+                    <h2>Dołącz do Naszej Społeczności <span>2025/2026</span></h2>
+                    <div class="header-decoration"></div>
+                    <p class="subtitle">Rozpocznij swoją edukacyjną podróż w jednej z najlepszych szkół w regionie</p>
+                </div>
+
+                <div class="recruiting-grid">
+                    <div class="recruiting-card main-info">
+                        <div class="card-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h3>Terminy rekrutacji</h3>
+                        <ul class="timeline">
+                            <li>
+                                <span class="date">01.03.2025</span>
+                                <span class="event">Rozpoczęcie rekrutacji</span>
+                            </li>
+                            <li>
+                                <span class="date">15.04.2025</span>
+                                <span class="event">Dzień otwarty</span>
+                            </li>
+                            <li>
+                                <span class="date">30.06.2025</span>
+                                <span class="event">Zamknięcie rekrutacji</span>
+                            </li>
+                            <li>
+                                <span class="date">15.07.2025</span>
+                                <span class="event">Ogłoszenie wyników</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="recruiting-card benefits">
+                        <div class="card-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3>Nasze atuty</h3>
+                        <div class="benefits-grid">
+                            <div class="benefit-item">
+                                <i class="fas fa-flask"></i>
+                                <h4>Nowoczesne pracownie</h4>
+                                <p>Wyposażone w najnowszy sprzęt technologiczny</p>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-globe"></i>
+                                <h4>Programy międzynarodowe</h4>
+                                <p>Wymiany uczniowskie i projekty Erasmus+</p>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-medal"></i>
+                                <h4>Osiągnięcia</h4>
+                                <p>Laureaci olimpiad przedmiotowych</p>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <h4>Absolwenci</h4>
+                                <p>95% absolwentów dostaje się na wymarzone studia</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="recruiting-card profiles">
+                        <div class="card-icon">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <h3>Dostępne profile</h3>
+                        <div class="profile-tabs">
+                            <div class="tab active" data-tab="science">
+                                <i class="fas fa-atom"></i> Naukowy
+                            </div>
+                            <div class="tab" data-tab="humanities">
+                                <i class="fas fa-book"></i> Humanistyczny
+                            </div>
+                            <div class="tab" data-tab="it">
+                                <i class="fas fa-code"></i> Informatyczny
+                            </div>
+                            <div class="tab" data-tab="bilingual">
+                                <i class="fas fa-language"></i> Dwujęzyczny
+                            </div>
+                        </div>
+                        <div class="tab-content active" id="science-content">
+                            <h4>Profil naukowy</h4>
+                            <p>Rozszerzony program z matematyki, fizyki i chemii. Współpraca z politechniką.</p>
+                            <ul>
+                                <li>Zajęcia laboratoryjne</li>
+                                <li>Projekty badawcze</li>
+                                <li>Obozy naukowe</li>
+                            </ul>
+                        </div>
+                        <div class="tab-content" id="humanities-content">
+                            <!-- Analogiczna zawartość dla innych profili -->
+                        </div>
+                    </div>
+
+                    <div class="recruiting-card cta-form">
+                        <div class="form-header">
+                            <h3>Złóż podanie online</h3>
+                            <p>Wypełnij formularz, a skontaktujemy się z Tobą w ciągu 48 godzin</p>
+                        </div>
+
+                        <form id="recruitment-form" class="modern-form">
+                            <div class="form-step active" data-step="1">
+                                <div class="input-group">
+                                    <label for="fullname">Imię i nazwisko*</label>
+                                    <input type="text" id="fullname" required>
+                                </div>
+                                <div class="input-group">
+                                    <label for="birthdate">Data urodzenia*</label>
+                                    <input type="date" id="birthdate" required>
+                                </div>
+                                <div class="input-group">
+                                    <label for="previous-school">Poprzednia szkoła</label>
+                                    <input type="text" id="previous-school">
+                                </div>
+                                <button type="button" class="next-step">Dalej →</button>
+                            </div>
+
+                            <div class="form-step" data-step="2">
+                                <div class="input-group">
+                                    <label for="email">Email*</label>
+                                    <input type="email" id="email" required>
+                                </div>
+                                <div class="input-group">
+                                    <label for="phone">Telefon*</label>
+                                    <input type="tel" id="phone" required>
+                                </div>
+                                <div class="input-group">
+                                    <label for="profile">Wybierz profil*</label>
+                                    <select id="profile" required>
+                                        <option value="">-- Wybierz --</option>
+                                        <option value="science">Profil naukowy</option>
+                                        <option value="humanities">Profil humanistyczny</option>
+                                        <option value="it">Profil informatyczny</option>
+                                        <option value="bilingual">Profil dwujęzyczny</option>
+                                    </select>
+                                </div>
+                                <div class="form-navigation">
+                                    <button type="button" class="prev-step">← Wstecz</button>
+                                    <button type="button" class="next-step">Dalej →</button>
+                                </div>
+                            </div>
+
+                            <div class="form-step" data-step="3">
+                                <div class="input-group">
+                                    <label for="achievements">Osiągnięcia (opcjonalne)</label>
+                                    <textarea id="achievements"
+                                        placeholder="Opisz swoje osiągnięcia szkolne, konkursowe, sportowe..."></textarea>
+                                </div>
+                                <div class="input-group">
+                                    <label for="motivation">List motywacyjny*</label>
+                                    <textarea id="motivation" required
+                                        placeholder="Dlaczego chcesz dołączyć do naszej szkoły? (min. 100 znaków)"></textarea>
+                                </div>
+                                <div class="form-navigation">
+                                    <button type="button" class="prev-step">← Wstecz</button>
+                                    <button type="submit" class="submit-form">Wyślij aplikację</button>
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="alternative-options">
+                            <p>Preferujesz tradycyjną formę?</p>
+                            <a href="#" class="download-link">Pobierz formularz PDF</a>
+                            <span>lub</span>
+                            <a href="mailto:rekrutacja@szkola.pl">Wyślij email</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recruiting-footer">
+                    <div class="contact-info">
+                        <h4>Masz pytania?</h4>
+                        <p><i class="fas fa-phone"></i> +48 123 456 789</p>
+                        <p><i class="fas fa-envelope"></i> rekrutacja@szkola.pl</p>
+                    </div>
+                    <div class="social-media">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h2>Liceum_Minimal</h2>
+        <p id="info_firm">&copy; 2025 Stworzone przez GLP</p>
+        <!-- Creator: Anastasiia Bzova 2025 -->
+    </footer>
+
+    <script src="./scripts/recruiting.js"></script>
+    <script src="./scripts/contact.js"></script>
+    <script src="./scripts/menu.js"></script>
+</body>
+
+</html>
