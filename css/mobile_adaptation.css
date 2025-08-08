@@ -133,6 +133,18 @@ footer h2 {
     justify-content: center;
 }
 
+/* Kadra */
+.teachers-grid {
+    grid-template-columns: 1fr;
+}
+
+.section-title {
+    font-size: 1.8rem;
+}
+.section-subtitle {
+    font-size: 1rem;
+}
+
 /* Kontakt */
 .contact-content {
   flex-direction: column;
