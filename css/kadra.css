@@ -1,0 +1,116 @@
+main{
+    margin-top: 0 ;
+}
+
+#kadra-section {
+  padding: var(--spacing-xl) var(--spacing-lg);
+  background-color: var(--section);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+.section-title {
+  font-family: var(--font-main);
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: var(--spacing-sm);
+  text-transform: uppercase;
+  color: var(--text-color);
+}
+.section-subtitle {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+  font-size: 1.1rem;
+  color: var(--text-color);
+  font-style: italic;
+}
+
+.teachers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Cards */
+.teacher-card {
+  min-height: 350px;
+  background-color: var(--background);
+  transition: var(--transition-speed);
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--box-shadow);
+}
+
+.teacher-image {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+.teacher-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.teacher-info {
+    padding: var(--spacing-md);
+    flex-grow: 1;
+    
+}
+.teacher-info h3 {
+    font-family: var(--font-alt);
+    font-size: 1.3rem;
+    margin-bottom: var(--spacing-sm);
+    color: var(--text-color);
+}
+
+
+.teacher-subject,
+.teacher-specialization,
+.teacher-consultations {
+    margin-bottom: var(--spacing-sm);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+.teacher-subject i,
+.teacher-consultations i {
+    margin-right: var(--spacing-sm);
+    color: var(--text-color);
+}
+.teacher-bio {
+    margin-top: var(--spacing-md);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--text-color);
+    border-top: 1px solid var(--color-accent);
+    padding-top: var(--spacing-sm);
+}
+
+/* Card animation */
+.teacher-card { 
+    position: relative;
+    transition: var(--transition-speed) ;
+    transform-style: preserve-3d;
+}
+.teacher-card.flipped {
+    transform: rotateY(180deg) scale(1.05); 
+}
+
+.card-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    padding: 20px;
+    box-shadow: var(--box-shadow);
+}
+/* animacja */
+.card-front {
+    transform: rotateY(0deg);
+}
+.card-back {
+    transform: rotateY(180deg);
+    background-color: #fff;
+}
