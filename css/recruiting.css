@@ -35,6 +35,8 @@
     color: var(--color-light);
     padding: var(--spacing-xl);
     background: linear-gradient(135deg, var(--color-violet), var(--color-teal), var(--color-orange) );
+     z-index: 1; 
+    overflow: hidden; 
 }
 .recruitment_header::before {
   content: '';
@@ -48,7 +50,7 @@
   background-size: 100% 100%;
   opacity: 0; 
   transition: opacity 0.5s ease-in-out, background-position 0.5s ease-in-out;
-  z-index: 0; 
+  z-index: -1; 
 }
 .recruitment_info:hover .recruitment_header::before {
   opacity: 1;
@@ -59,28 +61,35 @@
 
 /*   Info*/
 .recruitment_title {
+    position: relative;
     font-size: 2.5rem;
     margin-bottom: var(--spacing-sm);
 }
 .recruitment_title span {
+    position: relative;
     display: block;
     font-size: 1.8rem;
     font-weight: 300;
     margin-top: var(--spacing-xs);
-}
-.recruitment_divider {
-    width: 80px;
-    height: 4px;
-    background: rgba(255, 255, 255, 0.5);
-    margin: var(--spacing-lg) auto;
-    border-radius: 2px;
+    z-index: 2;
 }
 .recruitment_subtitle {
+    position: relative;
     font-size: 1.1rem;
     max-width: 700px;
     margin: 0 auto;
     line-height: 1.6;
     opacity: 0.9;
+    z-index: 2;
+}
+.recruitment_divider {
+    position: relative;
+    width: 80px;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.5);
+    margin: var(--spacing-lg) auto;
+    border-radius: 2px;
+    z-index: 2;
 }
 
 .recruitment_grid {
