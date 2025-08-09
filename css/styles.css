@@ -16,6 +16,8 @@ html{
     --color-violet: #5856d6;
     --color-light: #ffffff;
     --color-dark: #111;
+
+    --background:linear-gradient(135deg, #f5f7fa 0%, #e4e8ed 100%);
     
     --spacing-xs: 0.5rem;
     --spacing-sm: 1rem;
