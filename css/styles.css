@@ -50,11 +50,13 @@ html {
     transition: transform var(--transition-slow);
 }
 .icon-1 { top: 15%; left: 5%; transform: rotate(25deg); }
-.icon-2 { top: 30%; right: 8%; transform: rotate(-35deg); }
+.icon-2 { top: 45%; right: 8%; transform: rotate(-35deg); }
 .icon-3 { top: 55%; left: 3%; transform: rotate(50deg); }
 .icon-4 { top: 70%; right: 10%; transform: rotate(15deg); }
 .icon-5 { top: 85%; left: 6%; transform: rotate(-45deg); }
-.icon-6 { top: 5%; right: 18%; transform: rotate(60deg); }
+.icon-6 { top: 10%; right: 9%; transform: rotate(60deg); }
+.icon-7 { top: 112%; right: 3%; transform: rotate(15deg); }
+.icon-8 { top: 116%; left: 2%; transform: rotate(-45deg); }
 
 
 /* Vintage overlay texture */
