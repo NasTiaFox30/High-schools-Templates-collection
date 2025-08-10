@@ -111,23 +111,6 @@ footer {
 section {
     padding: var(--spacing-lg);
 }
-/* #main-section {
-    height: 100%;
-    position: relative;
-    transform-style: preserve-3d;
-}
-#main-section::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-image: url('../media/BG.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: repeat;
-    transform: translateZ(-1px) scale(2);
-    z-index: -1000;
-} */
-
 
 /* Menu */
 nav ul {
