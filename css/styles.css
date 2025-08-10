@@ -185,6 +185,145 @@ justify-content: center;
     font-weight: 300;
 }
 
+/* Contact  */
+#contactBG-box {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: all 0.5s ease;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contactBG-box.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+#contact-content {
+    position: relative;
+    background-color: #f5f0e1;
+    padding: 2rem;
+    border: 3px solid #8b5a2b;
+    border-radius: 5px;
+    width: 90%;
+    max-width: 700px;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+#contact-content h2 {
+    font-family: 'Special Elite', cursive;
+    color: #5a3921;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    border-bottom: 2px dashed #8b5a2b;
+    padding-bottom: 0.5rem;
+}
+#contact-content h2 i {
+    margin-right: 10px;
+    color: #8b5a2b;
+}
+.contact-form {
+    margin: 1.5rem 0;
+}
+
+.input-field {
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+.input-field label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-family: 'Merriweather', serif;
+    color: #5a3921;
+    font-weight: 600;
+}
+.input-field input,
+.input-field textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #8b5a2b;
+    background-color: rgba(255, 253, 245, 0.8);
+    font-family: 'Merriweather', serif;
+    color: #333;
+    transition: all 0.3s ease;
+}
+.input-field input:focus,
+.input-field textarea:focus {
+    outline: none;
+    border-color: #5a3921;
+    box-shadow: 0 0 5px rgba(139, 90, 43, 0.5);
+}
+.input-field textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.button {
+    background-color: #8b5a2b;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-family: 'Special Elite', cursive;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 3px;
+    display: block;
+    margin: 2rem auto 0;
+    width: 100%;
+    max-width: 300px;
+}
+.button:hover {
+    background-color: #5a3921;
+    transform: translateY(-2px);
+}
+
+.map-container {
+    margin-top: 2rem;
+    border: 2px solid #8b5a2b;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 300px;
+}
+#googleMap {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    color: #8b5a2b;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.close-btn:hover {
+    color: #5a3921;
+    transform: rotate(90deg);
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+#contact-content {
+    animation: fadeIn 0.5s ease forwards;
+}
 
 /* button */
 .vintage-btn {
