@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nazwa_Liceum - Biblioteka</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/library.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Merriweather:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="vintage-overlay"></div>
+
+    <header>
+        <div class="logo">
+            <img src="./media/Logo.jpeg" alt="Logo">
+            <h1>Nazwa_Liceum</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Główna</a></li>
+                <li><a href="learning.html">Nauka</a></li>
+                <li><a href="recruiting.html">Rekrutacja</a></li>
+                <li><a href="library.html">Biblioteka</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="library-info-section">
+            <div class="library-container">
+                <h2>Biblioteka Szkolna</h2>
+                <div class="library-content">
+                    <p class="lead">Serdecznie zapraszamy do naszej szkolnej biblioteki, miejsca, w którym tradycja
+                        literatury łączy się z nowoczesnymi zasobami cyfrowymi. To nie tylko zbiór książek, ale także
+                        centrum wiedzy, inspiracji i spotkań.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section id="library-catalog-section">
+            <div class="catalog-container">
+                <h3>Nasz katalog</h3>
+                <div class="catalog-grid">
+                    <div class="catalog-item">
+                        <img src="./media/book-classic.png" alt="Klasyczna literatura">
+                        <h4>Klasyka literatury</h4>
+                        <p>Dzieła mistrzów, które ukształtowały świat. Od starożytności po współczesne arcydzieła.</p>
+                    </div>
+                    <div class="catalog-item">
+                        <img src="./media/book-science.png" alt="Książki naukowe">
+                        <h4>Książki naukowe i popularnonaukowe</h4>
+                        <p>Zasoby wspierające naukę z różnych dziedzin: matematyki, fizyki, biologii i historii.</p>
+                    </div>
+                    <div class="catalog-item">
+                        <img src="./media/book-digital.png" alt="Książki cyfrowe">
+                        <h4>Zasoby cyfrowe</h4>
+                        <p>Dostęp do e-booków, audiobooków i baz danych online dla każdego ucznia i nauczyciela.</p>
+                    </div>
+                    <div class="catalog-item">
+                        <img src="./media/book-magazine.png" alt="Magazyny i czasopisma">
+                        <h4>Czasopisma i magazyny</h4>
+                        <p>Aktualne wydania prasy, które pomagają być na bieżąco z wydarzeniami i trendami.</p>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <section id="library-catalog-section">
+            <div class="catalog-container">
+                <h3>Nasz katalog</h3>
+                <div class="catalog-grid">
+                    <div class="catalog-item book-shelf">
+                        <img src="./media/book-classic.png" alt="Klasyczna literatura">
+                        <h4>Klasyka literatury</h4>
+                        <div class="shelf">
+                            <img src="./media/books/classic1.jpg" alt="Book 1">
+                            <img src="./media/books/classic2.jpg" alt="Book 2">
+                            <img src="./media/books/classic3.jpg" alt="Book 3">
+                            <img src="./media/books/classic4.jpg" alt="Book 4">
+                        </div>
+                        <p>Dzieła mistrzów, które ukształtowały świat. Od starożytności po współczesne arcydzieła.</p>
+                    </div>
+
+                    <div class="catalog-item book-shelf">
+                        <img src="./media/book-science.png" alt="Książki naukowe">
+                        <h4>Książki naukowe i popularnonaukowe</h4>
+                        <div class="shelf">
+                            <img src="./media/books/science1.jpg" alt="Book 4">
+                            <img src="./media/books/science2.jpg" alt="Book 5">
+                            <img src="./media/books/science3.jpg" alt="Book 6">
+                            <img src="./media/books/science4.jpg" alt="Book 7">
+                        </div>
+                        <p>Zasoby wspierające naukę z różnych dziedzin: matematyki, fizyki, biologii i historii.</p>
+                    </div>
+
+                    <div class="catalog-item">
+                        <img src="./media/photo2.jpg" alt="Książki cyfrowe">
+                        <h4>Zasoby cyfrowe</h4>
+                        <p>Dostęp do e-booków, audiobooków i baz danych online dla każdego ucznia i nauczyciela.</p>
+                    </div>
+                    <div class="catalog-item">
+                        <img src="./media/photo3.jpg" alt="Magazyny i czasopisma">
+                        <h4>Czasopisma i magazyny</h4>
+                        <p>Aktualne wydania prasy, które pomagają być na bieżąco z wydarzeniami i trendami.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="opening-hours-section">
+            <div class="hours-container">
+                <h3>Godziny otwarcia</h3>
+                <div class="hours-content">
+                    <ul class="hours-list">
+                        <li>Poniedziałek: 8:00 - 15:00</li>
+                        <li>Wtorek: 8:00 - 15:00</li>
+                        <li>Środa: 8:00 - 16:00</li>
+                        <li>Czwartek: 8:00 - 15:00</li>
+                        <li>Piątek: 8:00 - 14:00</li>
+                    </ul>
+                    <p class="hours-note">Wstęp do biblioteki jest wolny dla wszystkich uczniów i pracowników szkoły.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Decorations -->
+        <div class="decorative-icons">
+            <i class="fas fa-flask icon-1"></i>
+            <i class="fas fa-book-open icon-2"></i>
+            <i class="fas fa-atom icon-3"></i>
+            <i class="fas fa-graduation-cap icon-4"></i>
+            <i class="fas fa-palette icon-5"></i>
+            <i class="fas fa-chess-knight icon-6"></i>
+        </div>
+    </main>
+
+    <footer>
+        <p>Nazwa_Liceum – projekt retro</p>
+        <p id="info_firm">&copy; 2025 Stworzone przez GLP</p>
+    </footer>
+</body>
+
+</html>
