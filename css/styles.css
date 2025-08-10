@@ -68,6 +68,16 @@ html {
     pointer-events: none;
 }
 
+/* Vintage overlay texture */
+.vintage-overlay {
+    position: absolute;
+    inset: 0;
+    background: url('../media/paper-texture.jpg') center/cover;
+    mix-blend-mode: multiply;
+    opacity: 0.15;
+    pointer-events: none;
+    z-index: 0;
+}
 
 
 
