@@ -29,6 +29,9 @@ html {
     --radius-md: 8px;
     --radius-lg: 12px;
 
+    --border-width: 3px;
+    --line-thickness: 3px;
+
     --transition-normal: 0.3s ease;
     --transition-slow: 0.5s ease;
 }
