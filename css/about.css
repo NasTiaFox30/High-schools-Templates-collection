@@ -1,8 +1,7 @@
-/* About Section */
 #about-section {
     background: var(--bg-paper);
-    border-top: 3px solid var(--accent);
-    border-bottom: 3px solid var(--accent);
+    border-top: var(--border-width) solid var(--accent);
+    border-bottom: var(--border-width) solid var(--accent);
     overflow: hidden;
 }
 
@@ -11,6 +10,7 @@
     margin: 0 auto;
     padding: var(--spacing-xl) var(--spacing-lg);
 }
+
 #about-section h2 {
     font-family: var(--font-header);
     font-size: 2.5rem;
@@ -23,7 +23,7 @@
     content: "";
     display: block;
     width: 100px;
-    height: 3px;
+    height: var(--line-thickness);
     background: var(--accent);
     margin: var(--spacing-sm) auto;
 }
@@ -37,6 +37,7 @@
     flex: 1;
 }
 
+
 .lead {
     font-size: 1.2rem;
     font-weight: bold;
@@ -45,9 +46,11 @@
     color: var(--accent-dark);
 }
 
+
+/* Timeline */
 .timeline {
-    margin: var(--spacing-lg) 0;
     position: relative;
+    margin: var(--spacing-lg) 0;
     padding-left: var(--spacing-lg);
 }
 .timeline::before {
@@ -56,10 +59,9 @@
     left: 0;
     top: 0;
     bottom: 0;
-    width: 3px;
+    width: var(--line-thickness);
     background: var(--accent);
 }
-
 .timeline-item {
     position: relative;
     margin-bottom: var(--spacing-md);
@@ -68,24 +70,23 @@
 .timeline-item:last-child {
     margin-bottom: 0;
 }
-
 .timeline-year {
     display: inline-block;
     background: var(--accent);
-    color: white;
+    color: #fff;
     padding: var(--spacing-xs) var(--spacing-sm);
     border-radius: var(--radius-sm);
     font-weight: bold;
     margin-bottom: var(--spacing-xs);
 }
 
+/* Stats */
 .stats-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: var(--spacing-md);
     margin-top: var(--spacing-xl);
 }
-
 .stat-item {
     text-align: center;
     padding: var(--spacing-md);
@@ -103,6 +104,8 @@
     font-size: 0.9rem;
 }
 
+
+
 .about-image {
     flex: 1;
     position: relative;
@@ -111,14 +114,16 @@
 .vintage-photo {
     width: 100%;
     border-radius: var(--radius-md);
-    border: 8px solid white;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border: 8px solid #fff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     transform: rotate(-2deg);
     transition: transform var(--transition-normal);
 }
+
 .vintage-photo:hover {
     transform: rotate(0deg);
 }
+
 .image-caption {
     text-align: center;
     font-style: italic;
