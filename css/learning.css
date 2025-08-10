@@ -1,5 +1,4 @@
-/* Основні стилі сторінки Nauka */
-.nauka-container {
+.learning-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
@@ -8,54 +7,12 @@
     color: #333;
     font-family: 'Merriweather', serif;
     background-color: rgba(255, 253, 245, 0.85);
-    border-left: 1px solid #d4c9a8;
-    border-right: 1px solid #d4c9a8;
+    border: 1px solid #d4c9a8;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Hero секція */
-#nauka-hero {
-    background: url('../media/books-bg.jpg') no-repeat center center;
-    background-size: cover;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    margin-bottom: 2rem;
-    border-bottom: 3px solid #8b5a2b;
-}
-#nauka-hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.4);
-}
-
-#nauka-hero .hero-content {
-    position: relative;
-    z-index: 1;
-    text-align: center;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    padding: 1rem;
-}
-
-#nauka-hero h2 {
-    font-family: 'Special Elite', cursive;
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
-#nauka-hero p {
-    font-size: 1.5rem;
-    font-style: italic;
-}
-
 /* Секції */
-.program-section, .profile-section, .schedule-section {
+#educational-programs, #profile-section, #schedule-section {
     margin-bottom: 3rem;
     padding: 1.5rem;
     background-color: rgba(255, 255, 255, 0.8);
@@ -65,7 +22,7 @@
     position: relative;
 }
 
-.program-section h2, .profile-section h2, .schedule-section h2 {
+#educational-programs h2, #profile-section h2, #schedule-section h2 {
     font-family: 'Special Elite', cursive;
     color: #5a3921;
     border-bottom: 2px dashed #8b5a2b;
@@ -73,10 +30,9 @@
     margin-bottom: 1.5rem;
     font-size: 1.8rem;
 }
-
-.program-section h2 i, 
-.profile-section h2 i, 
-.schedule-section h2 i {
+#educational-programs h2 i, 
+#profile-section h2 i, 
+#schedule-section h2 i {
     margin-right: 10px;
     color: #8b5a2b;
 }
@@ -115,22 +71,18 @@
     text-align: center;
     font-size: 1.4rem;
 }
-
 .program-card p {
     margin-bottom: 1rem;
     line-height: 1.6;
 }
-
 .program-card ul {
     padding-left: 1.5rem;
     margin-bottom: 1rem;
 }
-
 .program-card li {
     margin-bottom: 0.5rem;
     position: relative;
 }
-
 .program-card li::before {
     content: '•';
     color: #8b5a2b;
@@ -140,7 +92,7 @@
     margin-left: -1em;
 }
 
-/* Профільні класи */
+/* Profile */
 .profile-tabs {
     display: flex;
     flex-wrap: wrap;
@@ -160,11 +112,9 @@
     color: #5a3921;
     transition: all 0.3s ease;
 }
-
 .tab-btn:hover {
     background-color: #e8e0c9;
 }
-
 .tab-btn.active {
     background-color: #8b5a2b;
     color: white;
@@ -178,7 +128,6 @@
     border: 1px solid #d4c9a8;
     border-radius: 0 5px 5px 5px;
 }
-
 .tab-content.active {
     display: block;
 }
@@ -189,7 +138,6 @@
     margin-bottom: 1rem;
     font-size: 1.5rem;
 }
-
 .tab-content p {
     margin-bottom: 1.5rem;
     line-height: 1.6;
@@ -201,14 +149,12 @@
     gap: 2rem;
     margin-top: 1.5rem;
 }
-
 .profile-subjects, .profile-advantages {
     background-color: rgba(255, 253, 245, 0.7);
     padding: 1rem;
     border: 1px dashed #d4c9a8;
     border-radius: 5px;
 }
-
 .profile-subjects h4, .profile-advantages h4 {
     font-family: 'Special Elite', cursive;
     color: #5a3921;
@@ -217,7 +163,7 @@
     text-align: center;
 }
 
-/* Розклад занять */
+/* Plan zajęć */
 .schedule-controls {
     display: flex;
     justify-content: space-between;
@@ -232,12 +178,10 @@
     align-items: center;
     gap: 0.5rem;
 }
-
 .class-selector label {
     font-weight: bold;
     color: #5a3921;
 }
-
 .class-selector select {
     padding: 0.5rem;
     border: 1px solid #d4c9a8;
@@ -257,45 +201,40 @@
     color: #5a3921;
     transition: all 0.3s ease;
 }
-
 .week-btn:hover {
     background-color: #e8e0c9;
 }
-
 .week-btn.active {
     background-color: #8b5a2b;
     color: white;
     border-color: #5a3921;
 }
 
-.schedule-table {
+/* table */
+#schedule-table {
     overflow-x: auto;
     margin-bottom: 1.5rem;
 }
-
-.schedule-table table {
+#schedule-table table {
     width: 100%;
     border-collapse: collapse;
     background-color: rgba(255, 253, 245, 0.9);
 }
-
-.schedule-table th, .schedule-table td {
+#schedule-table th, #schedule-table td {
     border: 1px solid #d4c9a8;
     padding: 0.75rem;
     text-align: center;
 }
-
-.schedule-table th {
+#schedule-table th {
     background-color: #8b5a2b;
     color: white;
     font-family: 'Special Elite', cursive;
 }
 
-.schedule-table tr:nth-child(even) {
+#schedule-table tr:nth-child(even) {
     background-color: rgba(245, 240, 225, 0.5);
 }
-
-.schedule-table tr:hover {
+#schedule-table tr:hover {
     background-color: rgba(210, 180, 140, 0.3);
 }
 
@@ -316,6 +255,7 @@
 
 .schedule-notes ul {
     padding-left: 1.5rem;
+    list-style: none;
 }
 
 .schedule-notes li {
@@ -331,42 +271,3 @@
     width: 1em;
     margin-left: -1em;
 }
-
-/* Адаптивність */
-/* @media (max-width: 768px) {
-    .profile-details {
-        grid-template-columns: 1fr;
-    }
-    
-    .profile-tabs {
-        flex-direction: column;
-    }
-    
-    .tab-btn {
-        border-radius: 5px;
-        margin-bottom: 0.5rem;
-    }
-    
-    .schedule-controls {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-}
-
-@media (max-width: 480px) {
-    .program-cards {
-        grid-template-columns: 1fr;
-    }
-    
-    .nauka-container {
-        padding: 1rem;
-    }
-    
-    #nauka-hero h2 {
-        font-size: 2rem;
-    }
-    
-    #nauka-hero p {
-        font-size: 1.2rem;
-    }
-} */
