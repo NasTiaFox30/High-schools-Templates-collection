@@ -187,6 +187,8 @@ section {
 }
 
 .card {
+    display: flex;
+    align-items: center;
     background: var(--color-light);
     color: var(--color-dark);
     padding: var(--spacing-lg);
@@ -197,6 +199,10 @@ section {
 .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+.card img{
+    width: 60px;
 }
 
 
