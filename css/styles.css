@@ -232,6 +232,9 @@ section:nth-child(odd) {
     text-align: center;
     padding: 2rem;
 }
+#partners-section img{
+    width: 200px;
+}
 
 a.button {
     background: var(--main-color);
