@@ -28,4 +28,15 @@
     .contact-map {
         height: 300px;
     }
+
+    #photo-content{
+        /* height: auto; */
+        padding: 0;
+        height: 350px;
+    }
+        #photo-content img{
+        position: relative;
+        top: 30%;
+        width: 100%;
+    }
 }
