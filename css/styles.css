@@ -170,6 +170,40 @@ header h1 {
 
 
 
+/* Contact  */
+#photoBG-box {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: all 0.5s ease;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#photoBG-box.show {
+    visibility: visible;
+    opacity: 1;
+}
+#photo-content {
+    position: relative;
+    padding: 2rem;
+    border-radius: 5px;
+    width: 1500px;
+    height: 90vh;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+#photo-content img{
+    height: 100%;
+    width: 100%;
+}
+
 .powitanie {
     height: 500px;
     text-align: center;
