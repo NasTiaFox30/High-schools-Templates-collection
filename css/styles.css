@@ -216,7 +216,7 @@ section:nth-child(odd) {
 }
 
 #partners-section {
-    background-color: var(--section-color);
+    background-color: var(--footer-color);
     text-align: center;
     padding: 2rem;
 }
