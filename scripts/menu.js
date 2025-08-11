@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener('scroll', () => {
         if (window.scrollY > scrollThreshold && menu.classList.contains("open")) {
             menu.classList.remove("open");
-            _divider.classList.add("hide");
+            _divider.classList.remove("hide");
         }
     });
 });
