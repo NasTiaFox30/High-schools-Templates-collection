@@ -84,6 +84,98 @@
             margin: 0;
         }
 
+        /* Меню */
+        #flex-menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            width: 100%;
+            background: transparent;
+
+        }
+
+        #logo-container {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        #logo-container img {
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+        }
+
+        #logo-container h1 {
+            font-size: 1.2rem;
+            color: white;
+        }
+
+        /* Menu */
+        #menu-toggle {
+            font-size: 1.8rem;
+            background: none;
+            border: none;
+            color: white;
+            cursor: pointer;
+            display: block;
+        }
+
+        #menu {
+            /* display: flex; */
+            display: none;
+            list-style: none;
+            gap: 1.5rem;
+            transform: translateY(-100%);
+        }
+
+        #menu.open {
+            display: flex;
+            transform: translateX(0);
+        }
+
+        #menu li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        #menu li a:hover {
+            color: #cce5dc;
+        }
+
+        ._divider {
+            position: relative;
+            width: 80px;
+            height: 4px;
+            background: rgba(255, 255, 255, 0.5);
+            margin: var(--spacing-lg) auto;
+            border-radius: 2px;
+            z-index: 2;
+        }
+
+        /* social medias */
+        .social-media {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .social-media i {
+            font-size: 1.2rem;
+            color: white;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .social-media i:hover {
+            color: #cce5dc;
+        }
+
+
+
         .powitanie {
             height: 500px;
             text-align: center;
