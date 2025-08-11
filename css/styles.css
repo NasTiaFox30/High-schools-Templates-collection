@@ -113,10 +113,13 @@ section {
 
 
 /* Menu */
-.menu_list {
+#menu_list {
+    gap: 40px;
+    line-height: 10px;
     display: flex;
     list-style: none;
-    gap: var(--spacing-md);
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .menu_link {
     color: var(--color-light);
