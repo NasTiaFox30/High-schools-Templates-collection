@@ -120,6 +120,7 @@ section:nth-child(odd) {
     align-items: flex-end;
 }
 #menu-links {
+    z-index: 1;
     display: flex;
     opacity: 0;
     visibility: hidden;
