@@ -83,7 +83,7 @@ section {
     padding: 3rem 2rem;    
 }
 section:nth-child(odd) {
-    background-color: var(--section-color);
+    background: var(--gradient);
 }
 .box-content{
     margin: auto;
