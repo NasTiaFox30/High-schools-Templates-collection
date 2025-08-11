@@ -82,7 +82,12 @@ section:nth-child(odd) {
 }
 .box-content{
     margin: auto;
-    max-width: 1200px;
+    max-width: 1100px;
+    text-align: center;
+}
+.box-content h2{
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
 }
 
 
@@ -208,23 +213,6 @@ section:nth-child(odd) {
     max-width: 100%;
     border-radius: 10px;
 }
-
-/* Features */
-.features {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 2rem;
-}
-.feature {
-    background: white;
-    padding: 1.5rem;
-    border-radius: 10px;
-    flex: 1 1 250px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
 
 #partners-section {
     background-color: var(--section-color);
