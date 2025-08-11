@@ -216,9 +216,15 @@ section:nth-child(odd) {
     padding: 2rem;
 }
 .powitanie img {
+    cursor: pointer;
     z-index: 1;
     max-width: 100%;
     border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+.powitanie:hover img {
+    transform: rotate(0.2deg) scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
 #partners-section {
