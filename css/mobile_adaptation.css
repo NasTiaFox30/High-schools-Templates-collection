@@ -1,0 +1,24 @@
+ @media (max-width: 768px) {
+    #flex-menu{
+            padding: 0;
+    }
+    #menu-links{
+        background: var(--main-color);
+        gap: 0rem;
+        display: grid;
+        position: fixed;
+        top: 30%;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        align-items: center;
+        align-content: stretch; 
+    }
+    ._divider{
+        width: 40%;
+    }
+
+    section{
+        padding: 4rem 1rem;
+    }
+}
