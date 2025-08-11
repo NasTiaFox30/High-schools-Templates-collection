@@ -200,7 +200,10 @@ section {
     transform: translateY(-5px);
     box-shadow: 0 6px 20px rgba(0,0,0,0.2);
 }
-
+.card .icon-new{
+    margin-left: 20px;
+    width: 30px;
+}
 .card img{
     width: 60px;
 }
