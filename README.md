@@ -1,4 +1,4 @@
-# High-schools-Templates-collection
+# High-schools-Templates Collection (5 different styles)
 
 1. **Project Name 1** — [Live Demo](https://nastiafox30.github.io/High-schools-Templates-collection/template_1/)
 2. **Project Name 2** — [Live Demo](https://nastiafox30.github.io/High-schools-Templates-collection/template_2/)
