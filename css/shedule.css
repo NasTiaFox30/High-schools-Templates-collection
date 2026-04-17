@@ -1,0 +1,124 @@
+main {
+  margin-top: 0;
+}
+
+#organizacja-section {
+  /* background-color: var(--section); */
+  padding: var(--spacing-xl);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+
+  overflow: hidden;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  z-index: 1;
+}
+#organizacja-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('../media/BG2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: translateZ(-1px) scale(2);
+  z-index: -1;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-lg);
+    max-width: 1200px;
+    margin: var(--spacing-xl) auto;
+}
+
+.calendar-item {
+    background: var(--background);
+    border: 1px solid var(--color-border);
+    padding: var(--spacing-lg);
+    text-align: center;
+    transition: var(--transition-speed);
+}
+.calendar-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--box-shadow);
+}
+
+.calendar-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: var(--spacing-sm);
+    color: var(--text-color);
+}
+
+/* Plan*/
+#plan-section {
+    padding: var(--spacing-xl);
+}
+.class-selector {
+    max-width: 800px;
+    margin: 0 auto var(--spacing-xl);
+    text-align: center;
+}
+.class-selector label {
+    display: block;
+    margin-bottom: var(--spacing-sm);
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+.class-selector select {
+    width: 100%;
+    padding: var(--spacing-md);
+    border: 1px solid var(--color-border);
+    background: var(--background);
+    font-family: var(--font-main);
+}
+
+#plan-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow-x: auto;
+}
+
+
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: var(--spacing-lg) auto;
+}
+
+.schedule-table th, 
+.schedule-table td {
+    border: 1px solid var(--color-border);
+    padding: var(--spacing-md);
+    text-align: center;
+}
+
+.schedule-table th {
+    background-color: var(--color-accent);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.schedule-table tr:nth-child(even) {
+    background-color: var(--background-light);
+}
+
+.lesson-time {
+    font-weight: 600;
+    color: var(--color-border);
+}
+
+.lesson-subject {
+    display: block;
+    margin-top: var(--spacing-sm);
+}
+
+.lesson-room {
+    font-size: 0.9rem;
+    color: var(--text-color);
+    opacity: 0.8;
+}

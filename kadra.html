@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liceum — Kadra</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/kadra.css">
+
+    <link rel="stylesheet" href="./css/mobile_adaptation.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Playwrite+AU+QLD:wght@100..400&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="flex-menu">
+            <div id="logo-container">
+                <a href="index.html">
+                    <img id="logo" src="./media/Logo.jpeg" alt="Logo">
+                    <h1 class="castoro-titling-regular">Liceum_Minimal</h1>
+                </a>
+            </div>
+
+            <button id="menu-toggle">&#9776;</button>
+            <nav id="menu">
+                <li><a href="./index.html #about-section">O nas</a></li>
+                <li><a href="./recruiting.html">Rekrutacja</a></li>
+                <li><a href="./kadra.html">Kadra</a></li>
+                <li><a href="./shedule.html">Plan zajęć</a></li>
+                <li><a href="./index.html #aktualnosci-section">Aktualności</a></li>
+                <li><a href="./index.html?showContactForm=true#contacts-section" class="contact-button">Kontakt</a>
+                </li>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="kadra-section">
+            <h1 class="section-title">Nasza kadra nauczycielska</h1>
+            <p class="section-subtitle">Doświadczeni pedagodzy z pasją do nauczania</p>
+
+            <div class="teachers-grid">
+                <!-- Nauczyciel 1 -->
+                <div class="teacher-card">
+                    <div class="teacher-image card-face card-front">
+                        <img src="./media/teacher1.jpg" alt="Anna Kowalska" onerror="this.src='./media/avatar.jpg'">
+                    </div>
+                    <div class="teacher-info card-face card-back">
+                        <h3>Anna Kowalska</h3>
+                        <p class="teacher-subject"><i class="fas fa-chalkboard-teacher"></i> Matematyka</p>
+                        <p class="teacher-specialization"><strong>Specjalizacja:</strong> Analiza matematyczna,
+                            statystyka
+                        </p>
+                        <p class="teacher-consultations"><i class="far fa-calendar-alt"></i>
+                            <strong>Konsultacje:</strong>
+                            Poniedziałek 14:30–15:30
+                        </p>
+                        <p class="teacher-bio">Absolwentka Uniwersytetu Warszawskiego, z 15-letnim doświadczeniem w
+                            przygotowaniu do olimpiad matematycznych.</p>
+                    </div>
+                </div>
+
+                <!-- Nauczyciel 2 -->
+                <div class="teacher-card">
+                    <div class="teacher-image card-face card-front">
+                        <img src="./media/teacher2.jpg" alt="Marek Nowak" onerror="this.src='./media/avatar.jpg'">
+                    </div>
+                    <div class="teacher-info card-face card-back">
+                        <h3>Marek Nowak</h3>
+                        <p class="teacher-subject"><i class="fas fa-chalkboard-teacher"></i> Historia, WOS</p>
+                        <p class="teacher-specialization"><strong>Specjalizacja:</strong> Historia Polski XX wieku</p>
+                        <p class="teacher-consultations"><i class="far fa-calendar-alt"></i>
+                            <strong>Konsultacje:</strong>
+                            Środa 13:00–14:00
+                        </p>
+                        <p class="teacher-bio">Doktor nauk humanistycznych, autor publikacji naukowych, pasjonat
+                            historii
+                            najnowszej.</p>
+                    </div>
+                </div>
+
+                <!-- Nauczyciel 3 -->
+                <div class="teacher-card">
+                    <div class="teacher-image card-face card-front">
+                        <img src="./media/teacher3.jpg" alt="Joanna Wiśniewska" onerror="this.src='./media/avatar.jpg'">
+                    </div>
+                    <div class="teacher-info card-face card-back">
+                        <h3>Joanna Wiśniewska</h3>
+                        <p class="teacher-subject"><i class="fas fa-chalkboard-teacher"></i> Język angielski</p>
+                        <p class="teacher-specialization"><strong>Specjalizacja:</strong> Metodyka nauczania języków
+                            obcych
+                        </p>
+                        <p class="teacher-consultations"><i class="far fa-calendar-alt"></i>
+                            <strong>Konsultacje:</strong>
+                            Piątek 8:00–9:00
+                        </p>
+                        <p class="teacher-bio">Certyfikowana nauczycielka z międzynarodowym doświadczeniem,
+                            egzaminatorka
+                            maturalna.</p>
+                    </div>
+                </div>
+
+                <!-- Nauczyciel 4 -->
+                <div class="teacher-card">
+                    <div class="teacher-image card-face card-front">
+                        <img src="./media/teacher4.jpg" alt="Tomasz Lewandowski"
+                            onerror="this.src='./media/avatar.jpg'">
+                    </div>
+                    <div class="teacher-info card-face card-back">
+                        <h3>Tomasz Lewandowski</h3>
+                        <p class="teacher-subject"><i class="fas fa-chalkboard-teacher"></i> Fizyka</p>
+                        <p class="teacher-specialization"><strong>Specjalizacja:</strong> Fizyka kwantowa</p>
+                        <p class="teacher-consultations"><i class="far fa-calendar-alt"></i>
+                            <strong>Konsultacje:</strong>
+                            Wtorek 15:00–16:00
+                        </p>
+                        <p class="teacher-bio">Pracownik naukowy Politechniki Warszawskiej, prowadzi koło fizyczne dla
+                            uczniów.</p>
+                    </div>
+                </div>
+
+                <!-- Nauczyciel 5 -->
+                <div class="teacher-card">
+                    <div class="teacher-image card-face card-front">
+                        <img src="./media/teacher5.jpg" alt="Katarzyna Zielińska"
+                            onerror="this.src='./media/avatar.jpg'">
+                    </div>
+                    <div class="teacher-info card-face card-back">
+                        <h3>Katarzyna Zielińska</h3>
+                        <p class="teacher-subject"><i class="fas fa-chalkboard-teacher"></i> Biologia, Chemia</p>
+                        <p class="teacher-specialization"><strong>Specjalizacja:</strong> Genetyka molekularna</p>
+                        <p class="teacher-consultations"><i class="far fa-calendar-alt"></i>
+                            <strong>Konsultacje:</strong>
+                            Czwartek 14:00–15:00
+                        </p>
+                        <p class="teacher-bio">Laureatka nagród naukowych, organizatorka warsztatów laboratoryjnych dla
+                            uczniów.</p>
+                    </div>
+                </div>
+
+                <!-- Nauczyciel 6 -->
+                <div class="teacher-card">
+                    <div class="teacher-image card-face card-front">
+                        <img src="./media/teacher6.jpg" alt="Piotr Woźniak" onerror="this.src='./media/avatar.jpg'">
+                    </div>
+                    <div class="teacher-info card-face card-back">
+                        <h3>Piotr Woźniak</h3>
+                        <p class="teacher-subject"><i class="fas fa-chalkboard-teacher"></i> Informatyka</p>
+                        <p class="teacher-specialization"><strong>Specjalizacja:</strong> Programowanie, algorytmika</p>
+                        <p class="teacher-consultations"><i class="far fa-calendar-alt"></i>
+                            <strong>Konsultacje:</strong>
+                            Poniedziałek 16:00–17:00
+                        </p>
+                        <p class="teacher-bio">Były programista w międzynarodowej korporacji, prowadzi szkolenia z
+                            nowych
+                            technologii.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h2>Liceum_Minimal</h2>
+        <p id="info_firm">&copy; 2025 Stworzone przez GLP</p>
+        <!-- Creator: Anastasiia Bzova 2025 -->
+    </footer>
+
+    <script src="./scripts/kadra.js"></script>
+    <script src="./scripts/menu.js"></script>
+</body>
+
+</html>
