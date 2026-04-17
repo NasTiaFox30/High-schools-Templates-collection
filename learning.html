@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nazwa_Liceum - Nauka</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/learning.css">
+
+    <link rel="stylesheet" href="./css/mobile_adaptation.css">
+
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Merriweather:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="vintage-overlay"></div>
+
+    <header>
+        <div class="logo">
+            <img src="./media/Logo.jpeg" alt="Logo">
+            <h1>Nazwa_Liceum</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Główna</a></li>
+                <li><a href="learning.html">Nauka</a></li>
+                <li><a href="recruiting.html">Rekrutacja</a></li>
+                <li><a href="library.html">Biblioteka</a></li>
+                <li><a href="./index.html?showContactForm=true#contacts-section">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="learning-container">
+        <section id="educational-programs">
+            <h2><i class="fas fa-book-open"></i> Programy edukacyjne</h2>
+
+            <div class="program-cards">
+                <div class="program-card">
+                    <div class="program-icon">
+                        <i class="fas fa-atom"></i>
+                    </div>
+                    <h3>Program podstawowy</h3>
+                    <p>Standardowy program nauczania zgodny z wymogami Ministerstwa Edukacji, zapewniający solidne
+                        przygotowanie do matury.</p>
+                    <ul>
+                        <li>30 godzin tygodniowo</li>
+                        <li>Zajęcia z wszystkich przedmiotów obowiązkowych</li>
+                        <li>Dodatkowe konsultacje</li>
+                    </ul>
+                </div>
+
+                <div class="program-card">
+                    <div class="program-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Program rozszerzony</h3>
+                    <p>Dla uczniów pragnących pogłębić wiedzę w wybranych dziedzinach.</p>
+                    <ul>
+                        <li>35 godzin tygodniowo</li>
+                        <li>2-3 przedmioty rozszerzone do wyboru</li>
+                        <li>Zajęcia projektowe</li>
+                        <li>Współpraca z uczelniami wyższymi</li>
+                    </ul>
+                </div>
+
+                <div class="program-card">
+                    <div class="program-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Program międzynarodowy</h3>
+                    <p>Program z elementami International Baccalaureate dla uczniów planujących studia za granicą.</p>
+                    <ul>
+                        <li>40 godzin tygodniowo</li>
+                        <li>Zajęcia w języku angielskim</li>
+                        <li>Certyfikaty językowe</li>
+                        <li>Wymiany międzynarodowe</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="profile-section">
+            <h2><i class="fas fa-graduation-cap"></i> Profile klas</h2>
+
+            <div class="class-profiles">
+                <div class="profile-tabs">
+                    <button class="tab-btn active" data-tab="mat-inf">Matematyczno-Informatyczny</button>
+                    <button class="tab-btn" data-tab="bio-chem">Biologiczno-Chemiczny</button>
+                    <button class="tab-btn" data-tab="human">Humanistyczny</button>
+                    <button class="tab-btn" data-tab="lingw">Lingwistyczny</button>
+                </div>
+
+                <div class="profile-content">
+                    <div id="mat-inf" class="tab-content active">
+                        <h3>Klasa Matematyczno-Informatyczna</h3>
+                        <p>Profil dla przyszłych inżynierów, programistów i naukowców. Rozwijamy logiczne myślenie i
+                            umiejętności programistyczne.</p>
+
+                        <div class="profile-details">
+                            <div class="profile-subjects">
+                                <h4>Przedmioty rozszerzone:</h4>
+                                <ul>
+                                    <li>Matematyka</li>
+                                    <li>Informatyka</li>
+                                    <li>Fizyka</li>
+                                </ul>
+                            </div>
+
+                            <div class="profile-advantages">
+                                <h4>Dodatkowe korzyści:</h4>
+                                <ul>
+                                    <li>Warsztaty programistyczne</li>
+                                    <li>Udział w olimpiadach</li>
+                                    <li>Współpraca z firmami IT</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="bio-chem" class="tab-content">
+                        <h3>Klasa Biologiczno-Chemiczna</h3>
+                        <p>Profil dla przyszłych lekarzy, farmaceutów i biologów. Praktyczne zajęcia laboratoryjne i
+                            współpraca z uczelniami medycznymi.</p>
+                    </div>
+
+                    <div id="human" class="tab-content">
+                        <h3>Klasa Humanistyczna</h3>
+                        <p>Profil dla przyszłych prawników, dziennikarzy i artystów. Rozwijamy kreatywność i
+                            umiejętności analityczne.</p>
+                    </div>
+
+                    <div id="lingw" class="tab-content">
+                        <h3>Klasa Lingwistyczna</h3>
+                        <p>Profil dla przyszłych tłumaczy, dyplomatów i międzynarodowych biznesmenów. Intensywna nauka
+                            języków obcych.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="schedule-section">
+            <h2><i class="fas fa-calendar-alt"></i> Rozkład zajęć</h2>
+
+            <div class="schedule-controls">
+                <div class="class-selector">
+                    <label for="class-select">Wybierz klasę:</label>
+                    <select id="class-select">
+                        <option value="1A">1A - Matematyczno-Informatyczna</option>
+                        <option value="1B">1B - Biologiczno-Chemiczna</option>
+                        <option value="1C">1C - Humanistyczna</option>
+                        <option value="2A">2A - Matematyczno-Informatyczna</option>
+                        <option value="2B">2B - Lingwistyczna</option>
+                        <option value="3A">3A - Biologiczno-Chemiczna</option>
+                        <option value="3B">3B - Humanistyczna</option>
+                        <option value="4A">4A - Matematyczno-Informatyczna</option>
+                    </select>
+                </div>
+
+                <div class="week-selector">
+                    <button class="week-btn active">Tydzień 1</button>
+                    <button class="week-btn">Tydzień 2</button>
+                </div>
+            </div>
+
+            <div id="schedule-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Godzina</th>
+                            <th>Poniedziałek</th>
+                            <th>Wtorek</th>
+                            <th>Środa</th>
+                            <th>Czwartek</th>
+                            <th>Piątek</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>8:00-8:45</td>
+                            <td>Matematyka</td>
+                            <td>Język angielski</td>
+                            <td>Fizyka</td>
+                            <td>Historia</td>
+                            <td>WF</td>
+                        </tr>
+                        <tr>
+                            <td>8:55-9:40</td>
+                            <td>Matematyka</td>
+                            <td>Język angielski</td>
+                            <td>Fizyka</td>
+                            <td>Historia</td>
+                            <td>WF</td>
+                        </tr>
+
+                        <!-- reszta planu zajęć -->
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="schedule-notes">
+                <h4>Uwagi:</h4>
+                <ul>
+                    <li>Zajęcia WF odbywają się na hali sportowej przy ul. Sportowej 15</li>
+                    <li>Konsultacje z nauczycielami - środy 15:00-17:00</li>
+                    <li>Zmiany w planie będą publikowane na tablicy ogłoszeń</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Decorations -->
+        <div class="decorative-icons">
+            <i class="fas fa-flask icon-1"></i>
+            <i class="fas fa-book-open icon-2"></i>
+            <i class="fas fa-atom icon-3"></i>
+            <i class="fas fa-graduation-cap icon-4"></i>
+            <i class="fas fa-palette icon-5"></i>
+            <i class="fas fa-chess-knight icon-6"></i>
+            <i class="fas fa-flask icon-7"></i>
+            <i class="fas fa-book-open icon-8"></i>
+        </div>
+    </main>
+
+    <footer>
+        <p>Nazwa_Liceum</p>
+        <p id="info_firm">&copy; 2025 Stworzone przez GLP</p>
+        <!-- Creator: Anastasiia Bzova 2025 -->
+    </footer>
+
+    <script src="./js/learning.js"></script>
+    <script src="./js/paralax.js"></script>
+    <script src="./js/shedule.js"></script>
+</body>
+
+</html>

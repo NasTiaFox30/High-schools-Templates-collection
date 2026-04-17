@@ -1,0 +1,170 @@
+#school-life-section{
+    background: url("../media/BG.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+}
+#school-life-section .entry-pin {
+    top: -15px;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    background: url('../media/pin.png') center/contain no-repeat;
+    transform: translateX(-50%) rotate(15deg);
+}
+
+/* Board */
+.bulletin-board {
+    position: relative;
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 3rem;
+    background:
+        linear-gradient(rgba(210, 180, 140, 0.8), rgba(210, 180, 140, 0.9));
+    border: 15px solid var(--accent-dark);
+    border-radius: 5px;
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.3),
+        inset 0 0 50px rgba(0, 0, 0, 0.2);
+    transform: rotate(-0.5deg);
+}
+
+.bulletin-board::before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    right: -15px;
+    bottom: -15px;
+    border: 2px dashed rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    pointer-events: none;
+}
+
+.board-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.board-header h3 {
+    display: inline-block;
+    background: var(--accent-dark);
+    color: var(--bg-paper);
+    padding: 0.5rem 2rem;
+    font-family: var(--font-header);
+    font-size: 2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    transform: rotate(-1deg);
+}
+
+.board-header::after {
+    content: "";
+    display: block;
+    width: 80%;
+    height: 2px;
+    background: linear-gradient(to right, transparent, var(--accent-dark), transparent);
+    margin: 1rem auto;
+}
+
+.notices-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.notice {
+    background: var(--bg-paper);
+    padding: 1.5rem;
+    border-radius: 3px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transform: rotate(0.5deg);
+    transition: all var(--transition-normal);
+    border-left: 4px solid var(--accent);
+}
+
+.notice:nth-child(even) {
+    transform: rotate(-0.5deg);
+}
+
+.notice:hover {
+    transform: rotate(0deg) scale(1.03);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.notice::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 20px;
+    height: 20px;
+    background: url('../media/pin.png') center/contain no-repeat;
+    opacity: 0.7;
+}
+
+.notice-date {
+    font-size: 0.8rem;
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.notice-title {
+    font-family: var(--font-header);
+    color: var(--accent-dark);
+    margin-bottom: 0.8rem;
+    border-bottom: 1px dotted var(--accent);
+    padding-bottom: 0.3rem;
+}
+
+/* Buttons */
+.board-btn,
+.vintage-btn {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    font-family: var(--font-header);
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.board-btn {
+    display: block;
+    width: max-content;
+    margin: 2rem auto 0;
+    padding: 0.8rem 2rem;
+    background: var(--accent-dark);
+    color: white;
+    border: none;
+}
+.board-btn::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.3),
+        transparent
+    );
+    transition: 0.6s;
+}
+.board-btn:hover::after{
+    left: 100%;
+}
+
+.vintage-img {
+    position: absolute;
+    width: 140px;
+    height: auto;
+    right: 5%;
+    bottom: 5%;
+}

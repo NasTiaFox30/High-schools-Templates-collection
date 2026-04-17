@@ -1,0 +1,174 @@
+#library-info-section,
+#library-catalog-section,
+#opening-hours-section {
+    padding: var(--spacing-lg);
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.library-container {
+    background-color: var(--bg-paper);
+    padding: var(--spacing-xl);
+    border: 1px solid var(--accent);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transform: rotate(-0.5deg);
+    margin-bottom: var(--spacing-xl);
+}
+
+.library-container h2 {
+    font-family: var(--font-header);
+    color: var(--accent-dark);
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: var(--spacing-sm);
+    text-transform: uppercase;
+}
+
+.library-container .lead {
+    font-family: var(--font-body);
+    font-size: 1.1rem;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    font-style: italic;
+}
+
+/* Katalog */
+.catalog-container {
+    background-color: white;
+    padding: var(--spacing-xl);
+    border: 1px solid var(--accent);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: var(--spacing-xl);
+}
+
+.catalog-container h3 {
+    font-family: var(--font-header);
+    color: var(--accent-dark);
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+    border-bottom: 2px dashed var(--accent);
+    display: inline-block;
+    padding-bottom: var(--spacing-sm);
+    transform: translateX(-50%);
+    left: 50%;
+    position: relative;
+}
+
+.catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.catalog-item {
+    text-align: center;
+    padding: var(--spacing-md);
+    background-color: var(--bg-paper);
+    border: 1px dashed var(--accent);
+    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+    position: relative;
+}
+
+.catalog-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.catalog-item img {
+    width: 200px;
+    height: 150px;  
+
+    border-radius: var(--radius-md);
+    margin-bottom: var(--spacing-sm);
+}
+
+.catalog-item h4 {
+    font-family: var(--font-header);
+    color: var(--accent-dark);
+    font-size: 1.3rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.book-shelf .shelf {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 5px;
+    height: 120px;
+    padding: 10px 0;
+    margin-bottom: 15px;
+    position: relative;
+    border-bottom: 5px solid #8b5e3c;
+}
+
+
+.book-shelf .shelf img {
+    width: 60px;
+    height: 90px;
+    object-fit: cover;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    border: 1px solid #3b2f2f;
+    transform: rotate(calc(var(--i) * 2deg - 1deg));
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.book-shelf .shelf img:hover {
+    transform: rotate(0deg) scale(1.1);
+    filter: brightness(1.1);
+    z-index: 10;
+}
+
+.book-shelf .shelf img:nth-child(1) { --i: -2; }
+.book-shelf .shelf img:nth-child(2) { --i: -1; }
+.book-shelf .shelf img:nth-child(3) { --i: 2; }
+.book-shelf .shelf img:nth-child(4) { --i: 3; }
+
+
+.hours-container {
+    background-color: rgba(210, 180, 140, 0.3);
+    padding: var(--spacing-xl);
+    border: 5px solid var(--accent-dark);
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transform: rotate(1deg);
+    margin-bottom: var(--spacing-xl);
+}
+
+.hours-container h3 {
+    font-family: var(--font-header);
+    color: var(--accent-dark);
+    font-size: 2rem;
+    margin-bottom: var(--spacing-lg);
+}
+
+.hours-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: var(--spacing-md);
+    display: inline-block;
+    text-align: left;
+}
+
+.hours-list li {
+    font-size: 1.1rem;
+    margin-bottom: var(--spacing-sm);
+    position: relative;
+    padding-left: 1.5rem;
+}
+.hours-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--accent-dark);
+    font-weight: bold;
+}
+
+.hours-note {
+    font-style: italic;
+    font-size: 0.9rem;
+    color: var(--text-dark);
+}

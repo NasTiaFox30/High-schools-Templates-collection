@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nazwa_Liceum - Retro</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/life_info.css">
+
+    <link rel="stylesheet" href="./css/mobile_adaptation.css">
+
+
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Merriweather:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="vintage-overlay"></div>
+
+    <header>
+        <div class="logo">
+            <img src="./media/Logo.jpeg" alt="Logo">
+            <h1>Nazwa_Liceum</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Główna</a></li>
+                <li><a href="learning.html">Nauka</a></li>
+                <li><a href="recruiting.html">Rekrutacja</a></li>
+                <li><a href="library.html">Biblioteka</a></li>
+                <li><a href="#" class="contact-button">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="powitanie">
+        <video id="video-background" autoplay muted loop playsinline>
+            <source src="media/video.mp4" type="video/mp4">
+            Twoja przeglądarka nie obsługuje wideo.
+        </video>
+
+        <div id="powitanie_content">
+            <div class="logo_powitanie">
+                <img src="./media/Logo.jpeg" alt="Logo">
+            </div>
+            <h2>Witamy w Liceum Retro</h2>
+            <h3>Tradycja spotyka się z nowoczesnością</h3>
+        </div>
+    </section>
+
+    <main>
+
+        <section id="about-section">
+            <div class="about-container">
+                <h2>O szkole</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p class="lead">Od 1975 roku kształtujemy charakter i intelekt, łącząc tradycję z
+                            nowoczesnością.</p>
+
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <span class="timeline-year">1975</span>
+                                <p>Założenie szkoły z inicjatywy lokalnej społeczności</p>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="timeline-year">1986</span>
+                                <p>Modernizacja zaplecza sportowego, stworzenie pracowni informatycznej</p>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="timeline-year">2016</span>
+                                <p>Modernizacja budynku z zachowaniem historycznego charakteru</p>
+                            </div>
+                        </div>
+
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <span class="stat-number">98%</span>
+                                <span class="stat-label">zdawalności matur</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">32</span>
+                                <span class="stat-label">nauczycieli</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">8</span>
+                                <span class="stat-label">kół zainteresowań</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-image">
+                        <img src="media/photo.jpg" alt="Historyczny budynek szkoły" class="vintage-photo">
+                        <div class="image-caption">Nasz budynek - perła architektury</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="school-life-section">
+
+            <div class="bulletin-board">
+
+                <div class="board-header">
+                    <h3>Aktualności</h3>
+                </div>
+
+                <div class="notices-container">
+
+                    <div class="notice">
+                        <div class="notice-date">15 CZERWCA 2024</div>
+                        <h4 class="notice-title">Dzień Otwarty</h4>
+                        <p>Zapraszamy przyszłych uczniów i rodziców na dzień otwarty w naszej szkole. Rozpoczęcie o
+                            10:00 w auli
+                            głównej.</p>
+                    </div>
+
+                    <div class="notice">
+                        <div class="notice-date">10 CZERWCA 2024</div>
+                        <h4 class="notice-title">Laureaci Olimpiady</h4>
+                        <p>Z przyjemnością informujemy o sukcesach naszych uczniów w Olimpiadzie Matematycznej.
+                            Gratulacje!</p>
+                    </div>
+
+                    <div class="notice">
+                        <div class="notice-date">5 CZERWCA 2024</div>
+                        <h4 class="notice-title">Wakacyjne Warsztaty</h4>
+                        <p>Zapisy na letnie warsztaty artystyczne i naukowe trwają do 20 czerwca. Liczba miejsc
+                            ograniczona!</p>
+                    </div>
+                </div>
+
+                <button class="board-btn">Zobacz wszystkie ogłoszenia</button>
+            </div>
+
+            <div class="cards-section">
+
+                <div class="card-entry">
+                    <div class="entry-pin"></div>
+                    <h3>Koła zainteresowań</h3>
+                    <p>Oferta zajęć pozalekcyjnych dostosowana do różnorodnych pasji uczniów:</p>
+                    <ul>
+                        <li>Klub Debat</li>
+                        <li>Koło Teatralne</li>
+                        <li>Zespół Muzyczny</li>
+                    </ul>
+                    <div class="card-entry-footer">
+                        <img class="vintage-img" src="./media/clubs.png" alt="">
+                        <button class="vintage-btn">Dołącz teraz</button>
+                    </div>
+                </div>
+
+                <div class="card-entry">
+                    <div class="entry-pin"></div>
+                    <h3>Szkolne tradycje</h3>
+                    <p>Poznaj nasze unikalne zwyczaje i coroczne wydarzenia, które tworzą klimat szkoły.</p>
+                    <div class="card-entry-footer">
+                        <img class="vintage-img" src="./media/traditions.png" alt="">
+                        <button class="vintage-btn">Poznaj tradycje</button>
+                    </div>
+                </div>
+
+                <div class="card-entry">
+                    <div class="entry-pin"></div>
+                    <h3>Zajęcia sportowe</h3>
+                    <p>Aktywne zajęcia, które pomagają uczniom rozwijać umiejętności fizyczne, ducha zespołowego i dbać
+                        o zdrowy tryb życia, od
+                        tradycyjnych gier po nowoczesne dyscypliny sportowe:</p>
+                    <ul>
+                        <li>Sekcja koszykówki</li>
+                        <li>Zajęcia jogi</li>
+                        <li>Drużyna szachowa</li>
+                    </ul>
+                    <div class="card-entry-footer">
+                        <img class="vintage-img" src="./media/sport.png" alt="">
+                        <button class="vintage-btn">Dołącz teraz</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Decorations -->
+        <div class="decorative-icons">
+            <i class="fas fa-flask icon-1"></i>
+            <i class="fas fa-book-open icon-2"></i>
+            <i class="fas fa-atom icon-3"></i>
+            <i class="fas fa-graduation-cap icon-4"></i>
+            <i class="fas fa-palette icon-5"></i>
+            <i class="fas fa-chess-knight icon-6"></i>
+            <i class="fas fa-flask icon-7"></i>
+            <i class="fas fa-book-open icon-8"></i>
+        </div>
+
+    </main>
+
+    <div id="contactBG-box">
+        <div id="contact-content">
+            <button id="close-contact" class="close-btn">
+                <i class="fas fa-times"></i>
+            </button>
+            <h2><i class="fas fa-envelope"></i> Skontaktuj się z nami</h2>
+            <div class="contact-form">
+                <form>
+                    <div class="input-field">
+                        <input id="name" type="text" class="validate">
+                        <label for="name">Imię i nazwisko</label>
+                    </div>
+                    <div class="input-field">
+                        <input id="email" type="email" class="validate">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="input-field">
+                        <textarea id="message" class="materialize-textarea"></textarea>
+                        <label for="message">Wiadomość</label>
+                    </div>
+                    <button class="button" type="submit">Wyślij</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <p><i class="fas fa-phone"></i> +48 123 456 789</p>
+                <p><i class="fas fa-envelope"></i> rekrutacja@szkola.pl</p>
+            </div>
+            <div class="map-placeholder">
+                <iframe id="googleMap"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4895.2791269984855!2d21.030782966433534!3d52.15906431567952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4719328f89315b6d%3A0x56321377b41fea8!2sAkademia%20Finans%C3%B3w%20i%20Biznesu%20Vistula!5e0!3m2!1suk!2spl!4v1754389258175!5m2!1suk!2spl"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Nazwa_Liceum</p>
+        <p id="info_firm">&copy; 2025 Stworzone przez GLP</p>
+        <!-- Creator: Anastasiia Bzova 2025 -->
+    </footer>
+
+    <script src="./js/contact.js"></script>
+    <script src="./js/paralax.js"></script>
+</body>
+
+</html>
